@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Getting Started With Github for Versioning Salesforce Metadata | Agileforce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Using Git, Github and the Force.com CLI you can easily record all the changes you make to the behaviour of your Salesforce Org.  Having a history of all the changes can be invaluable, allowing an easy">
+<meta name="keywords" content="force,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting Started With Github for Versioning Salesforce Metadata">
+<meta property="og:url" content="http://agileforce.co.uk/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html">
+<meta property="og:site_name" content="Agileforce">
+<meta property="og:description" content="Using Git, Github and the Force.com CLI you can easily record all the changes you make to the behaviour of your Salesforce Org.  Having a history of all the changes can be invaluable, allowing an easy">
+<meta property="og:image" content="http://agileforce.co.uk/images/s1-github-repository-new-gardening-app.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/github-app-login.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/github-app-config-identity.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/github-repository-clone-steps.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/github-app-repository-no-changes.png">
+<meta property="og:updated_time" content="2017-04-11T14:33:54.595Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Getting Started With Github for Versioning Salesforce Metadata">
+<meta name="twitter:description" content="Using Git, Github and the Force.com CLI you can easily record all the changes you make to the behaviour of your Salesforce Org.  Having a history of all the changes can be invaluable, allowing an easy">
+<meta name="twitter:image" content="http://agileforce.co.uk/images/s1-github-repository-new-gardening-app.png">
+<meta name="twitter:creator" content="@agileforce">
+  
+    <link rel="alternative" href="/atom.xml" title="Agileforce" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28030709-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Agileforce</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Agile Salesforce Development</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/lightning">Lightning</a>
+        
+          <a class="main-nav-link" href="/heroku-workshop">Heroku Workshop</a>
+        
+          <a class="main-nav-link" href="https://developer.salesforce.com">Salesforce Developers</a>
+        
+          <a class="main-nav-link" href="http://jr0cket.co.uk">jr0cket</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/jr0cket" target="_blank"></a>
+        <a id="nav-linkedin-link" class="nav-icon" href="https://uk.linkedin.com/in/jr0cket" target="_blank"></a>
+        <a id="nav-twitter-link" class="nav-icon" href="https://twitter.com/jr0cket" target="_blank"></a>
+        <a id="nav-googleplus-link" class="nav-icon" href="https://plus.google.com/117080433375668558463" target="_blank"></a>
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://agileforce.co.uk"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-managing-salesforce-metadata-with-git-and-force-cli" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html" class="article-date">
+  <time datetime="2014-10-10T18:42:57.000Z" itemprop="datePublished">10 Oct 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Getting Started With Github for Versioning Salesforce Metadata
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Using <a href="http://git-scm.com/" target="_blank" rel="external">Git</a>, <a href="https://github.com" target="_blank" rel="external">Github</a> and the <a href="https://developer.salesforce.com/page/Force.com_IDE" target="_blank" rel="external">Force.com CLI</a> you can easily record all the changes you make to the behaviour of your Salesforce Org.  Having a history of all the changes can be invaluable, allowing an easy way to track down issues and document how your Org was developed.</p>
+<blockquote>
+<p>In this guide we will cover a very easy way to use Git and the essentials of the Force.com CLI.  You can of course download all your Salesforce Org Metadata with other tools such as <a href="http://mavensmate.com/" target="_blank" rel="external">MavensMate</a> and <a href="https://developer.salesforce.com/page/Force.com_IDE" target="_blank" rel="external">Force.com IDE</a>.</p>
+</blockquote>
+<a id="more"></a>
+<div align="center"><br><iframe src="//www.slideshare.net/slideshow/embed_code/40125265" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; max-width: 100%;" allowfullscreen> </iframe><br><div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/JR0cket/dreamforce14-metadata-management-with-git-version-control" title="Dreamforce14 Metadata Management with Git Version Control" target="_blank">Dreamforce14 Metadata Management with Git Version Control</a> </strong> from <strong><a href="http://www.slideshare.net/JR0cket" target="_blank">John Stevenson</a></strong> </div></div>
+
+<h2 id="Getting-Started-with-Github"><a href="#Getting-Started-with-Github" class="headerlink" title="Getting Started with Github"></a>Getting Started with Github</h2><p><a href="https://github.com" target="_blank" rel="external">Github</a> is a cloud service for managing source code and configuration files.  You can use it manage all the changes you make to any text files in your project and easily share those changes with other developers.   Github also gives a visual way to compare changes between versions (a visual diff).</p>
+<p>As all the Metadata in your Salesforce Org is essentially a collection of text filescontaining XML, then its easy to use Github to manage all your changes.  You can of course also manage all your Apex, Visualforce, JavaScript and HTML5 code too.</p>
+<p>To get started:</p>
+<p>1)  create a free account on <a href="https://github.com" target="_blank" rel="external">Github</a><br>2)  install the Github desktop app (<a href="https://mac.github.com/" target="_blank" rel="external">MacOSX</a> or <a href="https://windows.github.com/" target="_blank" rel="external">Microsoft Windows</a>)</p>
+<h2 id="Create-a-Github-Repository-for-your-Salesforce-Metadata"><a href="#Create-a-Github-Repository-for-your-Salesforce-Metadata" class="headerlink" title="Create a Github Repository for your Salesforce Metadata"></a>Create a Github Repository for your Salesforce Metadata</h2><p>Once you have your Github account you can create a new repository.  A repository is a simple data store that will hold all the changes made in your project.</p>
+<p>In this example I have created a Gardening app in my Salesforce developer org, so I will created a repository on Github called gardening-app</p>
+<p><img src="/images/s1-github-repository-new-gardening-app.png" alt=""></p>
+<h2 id="Setting-up-the-Github-App"><a href="#Setting-up-the-Github-App" class="headerlink" title="Setting up the Github App"></a>Setting up the Github App</h2><p>Run the Github desktop app installed earlier.  If this is the first time you have used the Github app, you will need to configure it with your Github login details:</p>
+<p><img src="/images/github-app-login.png" alt=""></p>
+<p>Next you need to tell Github app your name and email address.  This is used to record who has created a change in your repository.  Its common practice to use the same name and email address you used when you created your Github account.</p>
+<p><img src="/images/github-app-config-identity.png" alt=""></p>
+<p>Finally, the Github app will check your computer for existing Git repositories.  If you do not have any or do not wish to add any repositories on your computer at this time then just press <strong>Done</strong>.</p>
+<h2 id="Using-the-Github-App-to-download-the-Gardening-App-repository"><a href="#Using-the-Github-App-to-download-the-Gardening-App-repository" class="headerlink" title="Using the Github App to download the Gardening App repository"></a>Using the Github App to download the Gardening App repository</h2><p>So far, the Gardening App repository I created is only on Github.  Whilst you can add and edit files via the Github website, if you are working on more than one file at a time it is easier to copy the repository to your computer.</p>
+<img src="/images/github-repository-clone-steps.png" class="img-topic">
+<p>The Github app makes copying a repository easy and uses the term Clone.</p>
+<p>1) Click the Add button</p>
+<p>2) Select Clone</p>
+<p>3) Select the Gardening repository or type in the name of your repository if you have many repositories already on Github</p>
+<p>4) Select the Clone button to copy all the files of the repository from Github to your computer.</p>
+<p>You are then prompted as to where you want the files to be created.</p>
+<p>In my project directory I have a directory called salesforce which I selected as the destination.  The repository from Github is then copied into a file called s1-gardening-app in the salesforce directory.</p>
+<p><img src="/images/github-app-repository-no-changes.png" alt=""></p>
+<p>Any files you add or changes you make to existing files will be detected automatically by the Github app.  So its time to get the Metadata from your Salesforce Org</p>
+<p>You are now ready to get the metadata from your Salesforce Org and version it with Git.  See the article on how to <a href="http://agileforce.co.uk/managing-metadata-with-git-and-force-cli">manage metadata with Git and Force CLI</a> for details on how to do this.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://agileforce.co.uk/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html" data-id="cj1dns21m000hmcu3fljqmozh" class="article-share-link">Share</a>
+      
+        <a href="http://agileforce.co.uk/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/force/">force</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/09/welcome-to-agileforce.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Welcome to AgileForce
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/10/managing-metadata-with-git-and-force-cli.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Managing Metadata With Git and Force CLI</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/feeling-smarter-after-dreamforce-2016.html">Feeling Smarter After Dreamforce 2016</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html">Salesforce Open Banking Apps at Barclays Rise Hackathon</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/getting-started-with-salesforce-app-cloud.html">Getting Started With Salesforce App Cloud</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/londons-calling-you-salesforce-part1.html">London&#39;s Calling You, Salesforce</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-metadata-with-git-and-force-cli.html">Managing Metadata With Git and Force CLI</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html">Getting Started With Github for Versioning Salesforce Metadata</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/welcome-to-agileforce.html">Welcome to AgileForce</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/app-cloud/">app-cloud</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/event/">event</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshops/">workshops</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/app-cloud/" style="font-size: 10px;">app-cloud</a> <a href="/tags/barclays/" style="font-size: 10px;">barclays</a> <a href="/tags/beginners/" style="font-size: 10px;">beginners</a> <a href="/tags/dreamforce/" style="font-size: 10px;">dreamforce</a> <a href="/tags/force/" style="font-size: 20px;">force</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/hackathon/" style="font-size: 10px;">hackathon</a> <a href="/tags/lightning/" style="font-size: 10px;">lightning</a> <a href="/tags/open-banking/" style="font-size: 10px;">open-banking</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Stevenson<br>
+      <a href="http://twitter.com/jr0cket" target="_blank">@jr0cket</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/lightning" class="mobile-nav-link">Lightning</a>
+  
+    <a href="/heroku-workshop" class="mobile-nav-link">Heroku Workshop</a>
+  
+    <a href="https://developer.salesforce.com" class="mobile-nav-link">Salesforce Developers</a>
+  
+    <a href="http://jr0cket.co.uk" class="mobile-nav-link">jr0cket</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'agileforce';
+  
+  var disqus_url = 'http://agileforce.co.uk/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<div id="scroll2top" style="position:fixed;bottom:150px;right:50px;cursor: pointer;Z-index:9999">
+<a title="返回顶部" href="#"><img src="/scroll2top/scrollup.png"/></a>
+</div>
+<script src="/scroll2top/scroll2top.js"></script>
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>External Objects | Agileforce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="OverviewExternal Objects provide an ability for the Salesforce Platform to reach out to an external system and use its data, without having to store that data in your Salesforce Org.  Use CasesHow oft">
+<meta property="og:type" content="website">
+<meta property="og:title" content="External Objects">
+<meta property="og:url" content="http://agileforce.co.uk/lightning/external-objects.html">
+<meta property="og:site_name" content="Agileforce">
+<meta property="og:description" content="OverviewExternal Objects provide an ability for the Salesforce Platform to reach out to an external system and use its data, without having to store that data in your Salesforce Org.  Use CasesHow oft">
+<meta property="og:updated_time" content="2017-04-11T14:33:54.611Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="External Objects">
+<meta name="twitter:description" content="OverviewExternal Objects provide an ability for the Salesforce Platform to reach out to an external system and use its data, without having to store that data in your Salesforce Org.  Use CasesHow oft">
+<meta name="twitter:creator" content="@agileforce">
+  
+    <link rel="alternative" href="/atom.xml" title="Agileforce" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28030709-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Agileforce</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Agile Salesforce Development</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/lightning">Lightning</a>
+        
+          <a class="main-nav-link" href="/heroku-workshop">Heroku Workshop</a>
+        
+          <a class="main-nav-link" href="https://developer.salesforce.com">Salesforce Developers</a>
+        
+          <a class="main-nav-link" href="http://jr0cket.co.uk">jr0cket</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/jr0cket" target="_blank"></a>
+        <a id="nav-linkedin-link" class="nav-icon" href="https://uk.linkedin.com/in/jr0cket" target="_blank"></a>
+        <a id="nav-twitter-link" class="nav-icon" href="https://twitter.com/jr0cket" target="_blank"></a>
+        <a id="nav-googleplus-link" class="nav-icon" href="https://plus.google.com/117080433375668558463" target="_blank"></a>
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://agileforce.co.uk"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/lightning/external-objects.html" class="article-date">
+  <time datetime="2017-04-11T14:33:54.611Z" itemprop="datePublished">11 Apr 2017</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      External Objects
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>External Objects provide an ability for the Salesforce Platform to reach out to an external system and use its data, without having to store that data in your Salesforce Org. </p>
+<h2 id="Use-Cases"><a href="#Use-Cases" class="headerlink" title="Use Cases"></a>Use Cases</h2><p>How often have you wanted to view large volumes of data from external or on-premise systems within Salesforce? The solutions usually play out as follows…</p>
+<p>Avoid having to store everything in Salesforce.  Moving everything to the cloud does require time and care not to include data that wont be directly valuable.</p>
+<p>  By orchestrating search over a wide range of back office and external data sources, External objects allow you to treat the world as if it was just part of Salesforce.</p>
+<h2 id="Article-What-is-Salesforce-Lightning-Connect-and-External-Objects"><a href="#Article-What-is-Salesforce-Lightning-Connect-and-External-Objects" class="headerlink" title="Article What is Salesforce Lightning Connect and External Objects?"></a>Article What is Salesforce Lightning Connect and External Objects?</h2><p>Posted by Tquila on 11 November 2014</p>
+<p>This post is Part 1 of a two part series on Lightning Connect and External Objects. This first post discusses the technology and the capabilities, the second will walk you through the steps to set up Lightning Connect in a Developer Edition Org.</p>
+<p>External Objects were first described in the Winter ‘15 release notes. External Objects provide a native platform ability for Salesforce to reach out to an external system and pull in the data it requires to display in Salesforce. How often have you wanted to view large volumes of data from external or on-premise systems within Salesforce? The solutions usually play out as follows…</p>
+<p>A large retail company looking to present their Customer Service Reps with the customers retail transactions from an on-premise Enterprise Resource Planning (ERP) system. How would we do this?</p>
+<pre><code>Load the data into Salesforce: There are tens of millions of records so will need to manage the volumes and archiving to mitigate data storage, the data will essentially be duplicated for the purpose of presenting it to the user.
+
+Callout to a web service: Requires the external service to serve the data to Salesforce. Will need to define APIs and mechanism for presenting the data and custom UI for presenting this alongside the customer in Salesforce.
+</code></pre><p>Both of these options are time consuming and involve a lot of effort and therefore cost. The truth is that unlocking data can be an expensive job.<br>Lightning Connect and External Objects</p>
+<p>Lightning Connect is the new name for External Data Sources which was announced in the Winter ‘15 release notes just before Dreamforce. External Data Sources and External Objects are still the setup features used to manage Lightning Connect and Files Connect.<br>Let’s Dig into External Objects</p>
+<p>External Objects allow for data to be exposed to Salesforce but not persisted on the platform. This is a nuanced distinction. In the old world, with our initial requirement we would weigh up the differences, we would discuss if the data would be valuable for driving workflow, or for reporting. If yes to one of these was a tick in the column for loading the data and persisting it in in Salesforce column, a no meant a vote for a web service to present the data will be just fine. With External Objects there is a new option. </p>
+<p>External Objects essentially provide a wrapper around the oData protocol which does initiate web service calls to retrieve the data as it’s presented on the screen or queried. This allows the data to be tightly integrated into the platform and used in standard layouts, and even SOQL, SOSL and APIs. Remember, this data is never stored in Salesforce but pulled in on demand through web services, this means you avoid the unnecessary (and expensive) limits and costs of data storage.</p>
+<p>External Data Sources are mapped and synced to a new type of Custom Object in Salesforce called External Objects (suffixed __x). These are defined through setup declaratively. To use External Objects  your data needs to be exposed as an oData source. I am no expert on oData (yet) so you can read more about it here. Once exposed as an oData source you then configure your External Data Source. Salesforce and the oData protocol work their magic and define your External Object definitions for you including custom fields and data types (we will step through this process in the follow up post).</p>
+<p>External Objects do not support workflow or reporting (reports not available at present but planned) but they are exposed to List Views, Related Lists, Global Search, even natively on Salesforce1 mobile. Also, I just found that mini page layouts work when you hover over recent items. What is even cooler is that the External Objects are natively exposed to SOQL, Apex and APIs. This means you can build custom charts, custom UIs or simply leverage standard tabs and page layouts. This is killer for unlocking your data. Expose via oData to Salesforce and it’s unlocked through not just the Salesforce platform but anything that can poke at the APIs too!</p>
+<p>Indirect Lookups allow you to link a field on your External Object, e.g. CustomerID to an External ID field on your Standard or Custom Object. This is great, and simple to achieve. Once you have set-up your Indirect Lookup the External Object will be available as a related list on your page layouts and can be used for joining SOQL queries. This is such a great feature as your users won’t have a clue that the data they are viewing is actually coming from somewhere else. This is explained in more details in the follow up post where we set up External Objects. </p>
+<p>Although External Objects are read-only (for now, oData does support full CRUD), Chatter is supported on External Objects however fields cannot be tracked and attachment are not allowed, even in the feed – you can try but you’ll get a funky error dialog.<br>Real life (limits and the decision to actually use it in the wild)</p>
+<p>In real life you may not have an oData service lying around. If you have data buried in an ERP then you can have a partner product to translate the protocols for you. The only services I am aware of that natively support oData are SAP and Sharepoint (Files Connect).</p>
+<p>At Dreamforce, Salesforce highlighted a number of integration partners supporting oData including Informatica Cloud, Jitterbit and Mule (to name a few). Each of these products have connectors for Salesforce and most of the data sources. These should be able to translate your non-oData data sources into the oData standard.</p>
+<p>As this is real life we have to consider actual feature set and latency. I have not tried this real life scenario yet as I havnt got a large scale ERP system to hand, but I have tried with a publicly available oData source and it just worked, straight away. oData is a standard, Salesforce have implemented that standard, so it should just work. As for latency again real life will have to tell you this -  it depends on the originating data source, database performance (e.g. column indexing), the network, and firewalls etc. But in the tests I have done with a free publicly available data set you really couldn’t tell it was being loaded separately from the rest of the data being displayed. Perhaps when testing extensively with SOQL and API you will see latency but that testing is for another day.</p>
+<p>In real life we deal with limits on the platform. This was the #1 question from my colleagues – can this really be used without butting heads with limits. What’s great is that all of the limits are available online (links at end of post). </p>
+<p>The most notable technical limit is that an Org is limited to 10,000 OData queries per hour, with higher limits available to purchase. </p>
+<p>Salesforce queries the external data source via web service when:</p>
+<pre><code>A user clicks an external object tab for a list view
+A user views a record detail page of a parent object that displays a related list of child external object records
+A user performs a global search in Salesforce or Salesforce1 mobile app
+An external object is queried via the APIs, Apex, SOQL, or SOSL
+</code></pre><p>The flat cap of queries per hour rather than being mapped to the number of users within the org may make the feature difficult to implement in large Orgs as estimating the cost comes down to a measure of usage. I would assume the limit was set at a sensible benchmark where most customers will comfortably sit within. The decision to use flat limits is an odd one especially when the model for API rate limiting works well when it’s pegged to users in the Org. I would like to see this adopted as the model for other rate limits such as Streaming API and oData Queries.</p>
+<p>An interesting feature is the option for ‘High Data Volume’. This essentially turns off one or two things to allow you to break through some of the limits. This means it is only necessary for specific scenarios. According to the documentation,  ‘High Data Volume’ bypasses most of the rate limits, but means the External Objects aren’t available in Salesforce1 and don’t support record feeds.</p>
+<p>Lightning Connect Consideration and Limits - More information here </p>
+<p>External Data Limits - More information here<br>Conclusion</p>
+<p>Lightning Connect can potentially solve some important use cases and further position Salesforce as the modern front end for your back office and legacy systems. The ability to interact with External Objects through SOQL, SOSL, Apex, and APIs is killer. This allows you to truly unlock data that you thought was siloed in your legacy systems. I am really looking forward to getting hold of this in the wild. I can already see a few great applications for Lightning Connect when reviewing some of the solutions in the Tquila pipeline. </p>
+<p>In the next post I will walk you through the steps for setting up Lightning Connect using a publicly available oData source.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://agileforce.co.uk/lightning/external-objects.html" data-id="cj1dns227001fmcu30exgvr8u" class="article-share-link">Share</a>
+      
+        <a href="http://agileforce.co.uk/lightning/external-objects.html#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/feeling-smarter-after-dreamforce-2016.html">Feeling Smarter After Dreamforce 2016</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html">Salesforce Open Banking Apps at Barclays Rise Hackathon</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/getting-started-with-salesforce-app-cloud.html">Getting Started With Salesforce App Cloud</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/londons-calling-you-salesforce-part1.html">London&#39;s Calling You, Salesforce</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-metadata-with-git-and-force-cli.html">Managing Metadata With Git and Force CLI</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html">Getting Started With Github for Versioning Salesforce Metadata</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/welcome-to-agileforce.html">Welcome to AgileForce</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/app-cloud/">app-cloud</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/event/">event</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshops/">workshops</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/app-cloud/" style="font-size: 10px;">app-cloud</a> <a href="/tags/barclays/" style="font-size: 10px;">barclays</a> <a href="/tags/beginners/" style="font-size: 10px;">beginners</a> <a href="/tags/dreamforce/" style="font-size: 10px;">dreamforce</a> <a href="/tags/force/" style="font-size: 20px;">force</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/hackathon/" style="font-size: 10px;">hackathon</a> <a href="/tags/lightning/" style="font-size: 10px;">lightning</a> <a href="/tags/open-banking/" style="font-size: 10px;">open-banking</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Stevenson<br>
+      <a href="http://twitter.com/jr0cket" target="_blank">@jr0cket</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/lightning" class="mobile-nav-link">Lightning</a>
+  
+    <a href="/heroku-workshop" class="mobile-nav-link">Heroku Workshop</a>
+  
+    <a href="https://developer.salesforce.com" class="mobile-nav-link">Salesforce Developers</a>
+  
+    <a href="http://jr0cket.co.uk" class="mobile-nav-link">jr0cket</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'agileforce';
+  
+  var disqus_url = 'http://agileforce.co.uk/lightning/external-objects.html';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<div id="scroll2top" style="position:fixed;bottom:150px;right:50px;cursor: pointer;Z-index:9999">
+<a title="返回顶部" href="#"><img src="/scroll2top/scrollup.png"/></a>
+</div>
+<script src="/scroll2top/scroll2top.js"></script>
+
+
+
+  </div>
+</body>
+</html>

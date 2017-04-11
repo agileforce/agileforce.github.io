@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Agileforce]]></title>
+  <subtitle><![CDATA[Agile Salesforce Development]]></subtitle>
+  <link href="categories/workshops/atom.xml" rel="self"/>
+  <link href="http://agileforce.co.uk/"/>
+  <updated>2017-04-11T14:33:54.595Z</updated>
+  <id>http://agileforce.co.uk/</id>
+  
+  <author>
+    <name><![CDATA[John Stevenson]]></name>
+    <email><![CDATA[john@agileforce.co.uk]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Welcome to AgileForce]]></title>
+    <link href="http://agileforce.co.uk/2014/09/welcome-to-agileforce.html"/>
+    <id>http://agileforce.co.uk/2014/09/welcome-to-agileforce.html</id>
+    <published>2014-09-03T18:42:57.000Z</published>
+    <updated>2017-04-11T14:33:54.595Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to the AgileForce website, a community site to help you learn how to create apps on the Salesforce platform using Agile principles and practices.</p>
+<p>The Salesforce platform itstelf is developed in an agile mannor by the teams at Salesforce, using a mixture of practices from Scrum and Lean software development.  We will try to give some insight into the practices used, helping demonstrate how Salesforce created a platform you can trust.</p>
+<p>This site will be a mixture of articles, tutorials and workshops to help you on your journey with the Salesforce platform.  To start with, here are several workshops that help you gain practical experience with the Salesforce platform</p>
+<a id="more"></a>
+<h2 id="Workshops"><a href="#Workshops" class="headerlink" title="Workshops"></a>Workshops</h2><ul>
+<li><p><a href="https://developer.salesforce.com/trailhead" target="_blank" rel="external">Salesforce Trailhead</a> - a range of workshops with challenges and a chance to earn badges</p>
+</li>
+<li><p><a href="http://jr0cket.co.uk/salesforce-admin-workshop/" target="_blank" rel="external">Admin Workshop</a> - create a Salesforce App without requiring any code</p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/salesforce1-app-tutorial/" target="_blank" rel="external">Salesforce 1 Mobile App development</a> - build an expense report mobile application in Salesforce 1 mobile without needing to code</p>
+</li>
+<li><p><a href="http://jr0cket.co.uk/salesforce-apex-for-admins-workshop/" target="_blank" rel="external">Apex for Admins</a> - your first steps into coding on the Salesforce Platform</p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/salesforce-developer-workshop/" target="_blank" rel="external">Developer workshop</a> - clicking and coding a conference management application </p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/salesforce-developer-advanced/" target="_blank" rel="external">Developer advanced workshop</a> - using JavaScript within Visualforce pages, OAuth, JavaScript remoting to Salesforce and Canvas to build a conference management app.</p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/getting-started-lightning-components/" target="_blank" rel="external">Lightning components workshop</a> - create components &amp; custom events to communicate between them, using JavaScript &amp; CSS libraries in components and integration with the Salesforce1 app</p>
+</li>
+<li><p><a href="https://www.udacity.com/course/ud162" target="_blank" rel="external">Udacity: Intro to point &amp; click development on Salesforce</a> - a complete and free course with video tutorials (select “Access free course material”).</p>
+</li>
+</ul>
+<p>There are also workbooks and tutorials at the <a href="https://developer.salesforce.com" target="_blank" rel="external">developer.salesforce.com</a> website, along with free developer environments and all the other resources you may need.</p>
+<h2 id="Community-content"><a href="#Community-content" class="headerlink" title="Community content"></a>Community content</h2><p>There are many great tutorials in the wider Salesforce community, here are just a few:</p>
+<ul>
+<li><p><a href="http://th3silverlining.com/2014/06/06/a-beginners-guide-to-object-oriented-programming-with-apex/" target="_blank" rel="external">Beginners Guide to Object-Oriented Programming with Apex</a></p>
+</li>
+<li><p><a href="http://paulbattisson.com/category/salesforce/force-com-cast/" target="_blank" rel="external">Force.com Cast video tutorials</a></p>
+</li>
+<li><p><a href="http://www.sfdc99.com/beginner-tutorials/" target="_blank" rel="external">SF99 Beginner Tutorials</a> - Apex tutorials for point-and-click admins with lashings of Starwars references</p>
+</li>
+</ul>
+<p>Thank you<br>The AgileForce Team<br><a href="https://twitter.com/agileforce" target="_blank" rel="external">@agileforce</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to the AgileForce website, a community site to help you learn how to create apps on the Salesforce platform using Agile principles and practices.</p>
+<p>The Salesforce platform itstelf is developed in an agile mannor by the teams at Salesforce, using a mixture of practices from Scrum and Lean software development.  We will try to give some insight into the practices used, helping demonstrate how Salesforce created a platform you can trust.</p>
+<p>This site will be a mixture of articles, tutorials and workshops to help you on your journey with the Salesforce platform.  To start with, here are several workshops that help you gain practical experience with the Salesforce platform</p>]]>
+    
+    </summary>
+    
+      <category term="force" scheme="http://agileforce.co.uk/tags/force/"/>
+    
+      <category term="lightning" scheme="http://agileforce.co.uk/tags/lightning/"/>
+    
+      <category term="workshops" scheme="http://agileforce.co.uk/categories/workshops/"/>
+    
+  </entry>
+  
+</feed>

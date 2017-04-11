@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Managing Metadata With Git and Force CLI | Agileforce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="In this article we will show you how to save the app you are building for the Salesforce Hackathon in Git using the Salesforce Force.com CLI.  The Force.com CLI is a really powerful tool for interac">
+<meta name="keywords" content="force,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Managing Metadata With Git and Force CLI">
+<meta property="og:url" content="http://agileforce.co.uk/2014/10/managing-metadata-with-git-and-force-cli.html">
+<meta property="og:site_name" content="Agileforce">
+<meta property="og:description" content="In this article we will show you how to save the app you are building for the Salesforce Hackathon in Git using the Salesforce Force.com CLI.  The Force.com CLI is a really powerful tool for interac">
+<meta property="og:image" content="http://agileforce.co.uk/images/salesforce-gardening-packages-new.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/salesforce-gardening-package-add-app.png">
+<meta property="og:updated_time" content="2017-04-11T14:33:54.595Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Managing Metadata With Git and Force CLI">
+<meta name="twitter:description" content="In this article we will show you how to save the app you are building for the Salesforce Hackathon in Git using the Salesforce Force.com CLI.  The Force.com CLI is a really powerful tool for interac">
+<meta name="twitter:image" content="http://agileforce.co.uk/images/salesforce-gardening-packages-new.png">
+<meta name="twitter:creator" content="@agileforce">
+  
+    <link rel="alternative" href="/atom.xml" title="Agileforce" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28030709-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Agileforce</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Agile Salesforce Development</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/lightning">Lightning</a>
+        
+          <a class="main-nav-link" href="/heroku-workshop">Heroku Workshop</a>
+        
+          <a class="main-nav-link" href="https://developer.salesforce.com">Salesforce Developers</a>
+        
+          <a class="main-nav-link" href="http://jr0cket.co.uk">jr0cket</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/jr0cket" target="_blank"></a>
+        <a id="nav-linkedin-link" class="nav-icon" href="https://uk.linkedin.com/in/jr0cket" target="_blank"></a>
+        <a id="nav-twitter-link" class="nav-icon" href="https://twitter.com/jr0cket" target="_blank"></a>
+        <a id="nav-googleplus-link" class="nav-icon" href="https://plus.google.com/117080433375668558463" target="_blank"></a>
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://agileforce.co.uk"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-managing-metadata-with-git-and-force-cli" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/10/managing-metadata-with-git-and-force-cli.html" class="article-date">
+  <time datetime="2014-10-11T08:25:09.000Z" itemprop="datePublished">11 Oct 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Managing Metadata With Git and Force CLI
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>  In this article we will show you how to save the app you are building for the Salesforce Hackathon in Git using the Salesforce Force.com CLI.</p>
+<blockquote>
+<p>The Force.com CLI is a really powerful tool for interacting with your Salesforce Org.  You can create new custom object, run queries and in this case download all the Metadata or any part of the Metadata from your Org.</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="Clone-the-BeMyApp-repository"><a href="#Clone-the-BeMyApp-repository" class="headerlink" title="Clone the BeMyApp repository"></a>Clone the BeMyApp repository</h2><p>You should have recieved a repository from BeMyApp, called something similar to <code>repository-123</code>.  Using a Git client such as Github for <a href="https://mac.github.com" target="_blank" rel="external">Mac</a>/<a href="https://windows.github.com" target="_blank" rel="external">Windows</a>, <a href="http://sourcetreeapp.com/" target="_blank" rel="external">SourceTree</a> or <a href="http://git-scm.com" target="_blank" rel="external">Git command line</a>.</p>
+<p>The Git command line is:</p>
+<pre><code>git clone https://github.com/bemyapp/repository-123.git
+</code></pre><h2 id="Getting-Saleforce-Org-Metadata-using-the-Force-com-CLI"><a href="#Getting-Saleforce-Org-Metadata-using-the-Force-com-CLI" class="headerlink" title="Getting Saleforce Org Metadata using the Force.com CLI"></a>Getting Saleforce Org Metadata using the Force.com CLI</h2><p>First you need to create an unmanaged package in your Salesforce Org, containing all the artefacts you want to manage.  If you create an App in your Salesforce Org then simply add that.</p>
+<img src="/images/salesforce-gardening-packages-new.png" class="img">
+<p>If you created an App in your Salesforce Org, then you can simply add that App and it will include all the relevant metadata.</p>
+<img src="/images/salesforce-gardening-package-add-app.png" class="img">
+<blockquote>
+<p>If you have created a Custom App and included tabs for you Custom Objects and Visuforce Pages and Canvas Pages to the Custom App the Force.com platform will automatically add any dependent resource such as Apex classes and Static Resources for you.</p>
+</blockquote>
+<h2 id="Installing-the-Force-com-CLI"><a href="#Installing-the-Force-com-CLI" class="headerlink" title="Installing the Force.com CLI"></a>Installing the Force.com CLI</h2><p>Download the appropriate file for either <a href="https://github.com/heroku/force/raw/master/binaries/darwin-386/force" target="_blank" rel="external">MacOSX</a>, <a href="https://github.com/heroku/force/raw/master/binaries/windows-386/force.exe" target="_blank" rel="external">Windows</a> or <a href="https://github.com/heroku/force/raw/master/binaries/linux-386/force" target="_blank" rel="external">Linux</a>.</p>
+<p>Save this file to a place on your operating sytem execution path (<code>$PATH</code>)</p>
+<blockquote>
+<p>On Mac &amp; Linux you can move the <code>force</code> file in the directory <code>/usr/local/bin</code> using the command <code>sudo mv force /usr/local/bin</code>.</p>
+</blockquote>
+<h2 id="Using-the-CLI-to-get-an-unmanaged-package"><a href="#Using-the-CLI-to-get-an-unmanaged-package" class="headerlink" title="Using the CLI to get an unmanaged package"></a>Using the CLI to get an unmanaged package</h2><p>You can use the force cli to download and unpack the package you created in your Salesforce Org into a folder called <code>metadata</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">force fetch package &lt;packagename&gt; --unpack</div></pre></td></tr></table></figure>
+<p>A browser window will open and you are prompted to enter your Salesforce Org username and password.  Then select <code>Allow</code> so the force cli tool can connect to your Salesforce Org and download your package.</p>
+<blockquote>
+<p>If you are using Chrome, you may experience a blank page after allowing access from Force CLI.  In the browser URL window, click the sheild icon on the right hand side and select “Run insecure script”</p>
+</blockquote>
+<p>You should now have a directory called <code>metadata</code> in which is a sub-directory named after your package.  This sub-directory contains all the artifacts that you specified when you created your unmanaged package (custom objects, custom fields, page layouts, etc).</p>
+<h2 id="Saving-your-changes-to-Github"><a href="#Saving-your-changes-to-Github" class="headerlink" title="Saving your changes to Github"></a>Saving your changes to Github</h2><p>Once the metadata is downloaded, your add and commit all the files to your local git repository as usual.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &quot;first git challenge&quot;</div></pre></td></tr></table></figure>
+<p>Now you can share that commit with the repository given to you by BeMyApp using the command</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<p>Now get back to hacking your App.</p>
+<p>Thank you</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://agileforce.co.uk/2014/10/managing-metadata-with-git-and-force-cli.html" data-id="cj1dns21i000cmcu33ibox9pe" class="article-share-link">Share</a>
+      
+        <a href="http://agileforce.co.uk/2014/10/managing-metadata-with-git-and-force-cli.html#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/force/">force</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Getting Started With Github for Versioning Salesforce Metadata
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/02/londons-calling-you-salesforce-part1.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">London&#39;s Calling You, Salesforce</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/feeling-smarter-after-dreamforce-2016.html">Feeling Smarter After Dreamforce 2016</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html">Salesforce Open Banking Apps at Barclays Rise Hackathon</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/getting-started-with-salesforce-app-cloud.html">Getting Started With Salesforce App Cloud</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/londons-calling-you-salesforce-part1.html">London&#39;s Calling You, Salesforce</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-metadata-with-git-and-force-cli.html">Managing Metadata With Git and Force CLI</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html">Getting Started With Github for Versioning Salesforce Metadata</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/welcome-to-agileforce.html">Welcome to AgileForce</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/app-cloud/">app-cloud</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/event/">event</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshops/">workshops</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/app-cloud/" style="font-size: 10px;">app-cloud</a> <a href="/tags/barclays/" style="font-size: 10px;">barclays</a> <a href="/tags/beginners/" style="font-size: 10px;">beginners</a> <a href="/tags/dreamforce/" style="font-size: 10px;">dreamforce</a> <a href="/tags/force/" style="font-size: 20px;">force</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/hackathon/" style="font-size: 10px;">hackathon</a> <a href="/tags/lightning/" style="font-size: 10px;">lightning</a> <a href="/tags/open-banking/" style="font-size: 10px;">open-banking</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Stevenson<br>
+      <a href="http://twitter.com/jr0cket" target="_blank">@jr0cket</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/lightning" class="mobile-nav-link">Lightning</a>
+  
+    <a href="/heroku-workshop" class="mobile-nav-link">Heroku Workshop</a>
+  
+    <a href="https://developer.salesforce.com" class="mobile-nav-link">Salesforce Developers</a>
+  
+    <a href="http://jr0cket.co.uk" class="mobile-nav-link">jr0cket</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'agileforce';
+  
+  var disqus_url = 'http://agileforce.co.uk/2014/10/managing-metadata-with-git-and-force-cli.html';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<div id="scroll2top" style="position:fixed;bottom:150px;right:50px;cursor: pointer;Z-index:9999">
+<a title="返回顶部" href="#"><img src="/scroll2top/scrollup.png"/></a>
+</div>
+<script src="/scroll2top/scroll2top.js"></script>
+
+
+
+  </div>
+</body>
+</html>

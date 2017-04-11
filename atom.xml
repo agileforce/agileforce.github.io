@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Agileforce</title>
+  <subtitle>Agile Salesforce Development</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://agileforce.co.uk/"/>
+  <updated>2016-10-28T16:22:28.629Z</updated>
+  <id>http://agileforce.co.uk/</id>
+  
+  <author>
+    <name>John Stevenson</name>
+    <email>john@agileforce.co.uk</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Feeling Smarter After Dreamforce 2016</title>
+    <link href="http://agileforce.co.uk/2016/10/feeling-smarter-after-dreamforce-2016.html"/>
+    <id>http://agileforce.co.uk/2016/10/feeling-smarter-after-dreamforce-2016.html</id>
+    <published>2016-10-27T04:23:08.000Z</published>
+    <updated>2016-10-28T16:22:28.629Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>Each year I’ve been lucky enough to visit Dreamforce there were so many new ideas to discover and this year even more so, especially with the rise of Artificial Intelligence (AI) and Machine Learning (ML) via Salesforce Einstien.</p>
+<p>Here are just a few of the highlights from Dreamforce 2016 that make me feel a whole lot smarter.</p>
+<a id="more"></a>
+<h1 id="Collaborating-with-Quip"><a href="#Collaborating-with-Quip" class="headerlink" title="Collaborating with Quip"></a>Collaborating with Quip</h1><p>The demo station for <a href="https://quip.com/" target="_blank" rel="external">Quip</a> was over-run with people throughout the conference.  Its not surprising as <a href="https://quip.com/" target="_blank" rel="external">Quip</a> has become the favorite tool for documents and spreadsheets within Salesforce in less than a month.</p>
+<p>Quip is a service similar Google Docs but with a whole lot of extra features that make the experience such a pleasure.  The most noticeable thing is the performance of <a href="https://quip.com/" target="_blank" rel="external">Quip</a> too, its so responsive even on a mobile device.  I have even updated <a href="https://quip.com/" target="_blank" rel="external">Quip</a> spreadsheets and docs on the train home just using my smart phone.  Salesforce has also had 150 concurrently working on one Quip document without any slowdown.</p>
+<p>I really encourage you to give <a href="https://quip.com/" target="_blank" rel="external">Quip</a> a try today, you will not regret it.</p>
+<p><img src="https://lh3.googleusercontent.com/ggQhaOzhFtEB8UmacW-taW__cNbYEzjmUsAcpUc2nOlmBU_waDhUpKruQT80gFBf_DHz=h900" alt="Quip Collaborate"></p>
+<h1 id="Guiding-you-into-Lightning-Components"><a href="#Guiding-you-into-Lightning-Components" class="headerlink" title="Guiding you into Lightning Components"></a>Guiding you into Lightning Components</h1><p>The adoption of Salesforce Lightning Experience continues to grow and with Winter 17 release there are many new features to explore.</p>
+<p><img src="https://jr0cket.quip.com/-/blob/CMRAAADD2hb/DZJ0MSB6wTrR6QV-rYX98g" alt="Lightning Components Winter 17 Features"></p>
+<p>So more and more developers are looking to understand what components to build and the best practices they can use to create those components. </p>
+<p>Tom Waud, Chief Technical Architect at Westbrook, presented <a href="https://www.salesforce.com/video/303939/" target="_blank" rel="external">Advanced Designs for Reusable Lightning Components</a> in which he explained a series of common patterns his developers have used over the last year over the last year to build components effectively. </p>
+<p>And creating Lightning Components its not just in the realms of experienced Salesforce developers.   <a href="https://www.salesforce.com/video/303951/" target="_blank" rel="external">Kerry Townsend shared her journey into coding</a> for the first time on the Salesforce platform, choosing to start by building her first Lightning Component.  This was quite a leap from no-code experience with Salesforce, but with the help of Keir Bowden and several others Kerry managed to create her first component and is keen to do more.</p>
+<p>See the video <a href="https://www.salesforce.com/video/303951/" target="_blank" rel="external">“From No-Code to Lightning Components Developer”</a> by Kerry and Keir and try out the <a href="https://trailhead.salesforce.com/module/lex_dev_lc_basics?utm_campaign=df16_trailhead&amp;utm_source=agenda_builder&amp;utm_medium=site" target="_blank" rel="external">Lightning Components Trail</a> on Salesforce Trailhead.</p>
+<img src="https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_components_basics.png" class="img-topic">
+<p>Keep a look out for Lightning Component Builder in 2017 as this tool promises to make it easier and quicker than ever to create Lightning Components.  Instead of copy-paste of any the boiler-plate code (yes, we all do this), instead you can select the code snippets you need to build your component in a similar way to selecting components in Lightning App Builder.</p>
+<p>Also keep a look-out for Salesforce DX, which promises to deliver set of tools that allow you to create a robust and scalable development and deployment workflow, taking a source driven development approach.  See the <a href="https://www.salesforce.com/video/282548/" target="_blank" rel="external">SalesforceDX demo during the Developer keynote</a> (at 31 minutes in)</p>
+<p><img src="/images/salesforce-dx.png" alt="SalesforceDX"></p>
+<h1 id="The-First-Taste-of-Einstein"><a href="#The-First-Taste-of-Einstein" class="headerlink" title="The First Taste of Einstein"></a>The First Taste of Einstein</h1><img src="https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_artificial_intelligence_basics.png" class="img-topic">
+<p>Artificial Intelligence has already brought us seemingly simple things like product recommendations and speech recognition, however this is just scratching the surface.  New concepts such as artificial hearing are radically changing the way we think about the services that AI can bring us.</p>
+<p>Salesforce has adopted Artificial Intelligence (AI) and Machine Learning (ML) in a big way, its the future of our platform and our products.  Through Salesforce Einstein anyone can have access to recommendations and predictions that would otherwise need an army of data scientists.</p>
+<p><a href="https://www.metamind.io/" target="_blank" rel="external">MetaMind</a> is a <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="external">Deep Learning</a> platform that is becoming part of the Salesforce platform.  Deep Learning is a way to automate the discover information a a huge collection of data, using multiple neural networks all learning from the results of each algorithm in the network.  Soon anyone will be able to use their own data in Salesforce and train up their own Deep Learning algorithms to give valuable insights.</p>
+<p>We are only just scratching the surface of Artificial Intelligence and there are many amazing things to come.  Talk a look at the Salesforce AI story <a href="https://www.salesforce.com/video/282547/" target="_blank" rel="external">Einstein Keynote</a></p>
+<p>As the Salesforce AI story unfolds, why not use Trailhead to discover a little more about <a href="https://trailhead.salesforce.com/module/ai_basics" target="_blank" rel="external">Artificial Intelligence Basics</a> and <a href="https://trailhead.salesforce.com/module/get_smart_einstein_feat" target="_blank" rel="external">Salesforce Einstein Features</a>.</p>
+<p><a href="https://trailhead.salesforce.com/module/get_smart_einstein_feat" target="_blank" rel="external">![Salesforce Einstein] (/images/salesforce-einstein-I-for-everyone.png)</a></p>
+<h1 id="Giving-back-again-and-again"><a href="#Giving-back-again-and-again" class="headerlink" title="Giving back again and again"></a>Giving back again and again</h1><img src="/images/red-astro-hug.jpg" class="img-topic">
+<p>Dreamforce is as much a community experience as it is a conference, a very diverse community at that with large numbers of women and other typically unrepresented groups. </p>
+<p>The Dreamforce community is also very generous with millions of dollars raised during the conference.  This year there was a focus on the organisation <a href="https://red.org/dreamforce/" target="_blank" rel="external">RED</a>, which is committed to ending AIDS in this generation.  The RED campaign was so popular all the RED Astro bears were sold out long before the end of the conference.</p>
+<p>Along with this were the continuing efforts in <a href="https://www.pluralsight.com/courses/teaching-kids-basic-html" target="_blank" rel="external">teaching kids to code</a>, <a href="https://www.pluralsight.com/blog/career/women-in-tech--advice-from-pluralsight---s-leading-female-technology-pros" target="_blank" rel="external">encouraging more women into technology</a>, helping the homeless and providing education services for those struggling to make a living wage.</p>
+<p>Sold out of RED Astro’s - check to see if we made the target - blurb from site…</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Dreamforce 2016 was another huge success with 175,000 attendees in person and 15 million watching the event live.</p>
+<p>My thanks to the legion of people involved in creating Dreamforce each year and to everyone that joins in the fun and discovery.  See you all at <a href="https://www.salesforce.com/form/dreamforce/df17.jsp" target="_blank" rel="external">Dreamforce 2017</a>, from the 6th to 9th November.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/images/salesforce-app-cloud-logo.png&quot; class=&quot;img-thumbnail&quot;&gt;
+&lt;p&gt;Each year I’ve been lucky enough to visit Dreamforce there were so many new ideas to discover and this year even more so, especially with the rise of Artificial Intelligence (AI) and Machine Learning (ML) via Salesforce Einstien.&lt;/p&gt;
+&lt;p&gt;Here are just a few of the highlights from Dreamforce 2016 that make me feel a whole lot smarter.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="event" scheme="http://agileforce.co.uk/categories/event/"/>
+    
+    
+      <category term="dreamforce" scheme="http://agileforce.co.uk/tags/dreamforce/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Salesforce Open Banking Apps at Barclays Rise Hackathon</title>
+    <link href="http://agileforce.co.uk/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html"/>
+    <id>http://agileforce.co.uk/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html</id>
+    <published>2016-08-15T10:02:08.000Z</published>
+    <updated>2017-04-11T12:48:33.084Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>Inviting all admins &amp; developers to create a new generation of innovative Open Banking apps on the Salesforce App Cloud. </p>
+<p>Salesforce are a technology partner for the <a href="http://risehackathon.com/" target="_blank" rel="external">Barclays Rise Hackathon - Episode II: The Bank Awakens</a> event and we will be there in force to help everyone build consumer, commercial and autonomous banking apps.</p>
+<a id="more"></a>
+<h1 id="Open-Banking-is-on-the-Rise"><a href="#Open-Banking-is-on-the-Rise" class="headerlink" title="Open Banking is on the Rise"></a>Open Banking is on the Rise</h1><img src="/images/salesforce-open-banking-rise-hackathon.png" class="img-topic">
+<p>Whist customers may change their credit cards every few years, bank accounts typically lasted decades.  In October 2015 a <a href="">survey by the UK’s Competition and Markets Authority</a> revealed that over half of banking customers in Britain had been with the same current account provider for ten years.  This is now set to change dramatically.</p>
+<blockquote>
+<p>Unlike puppies, Bank customers are no longer for life!!</p>
+</blockquote>
+<p>Driven by the rise of comparison &amp; switch sites, eg, <a href="https://www.uswitch.com" target="_blank" rel="external">uSwitch</a>, in Europe customers are already used to switching their Gas &amp; Electricity suppliers or Car Insurance to get the best deals.  This drive is now coming to the banking world, thanks to Europe wide regulations to make banking and financial data more accessible.</p>
+<p>Initiatives like the <a href="https://openbankproject.com/" target="_blank" rel="external">Open Banking project</a> and regulations like PSD2 will require banks to be more open or risk losing customers to those banks that innovate.  Traditional digital platforms such as the retail service Alibaba and message service WeChat already process more payments than PayPal and other dedicated payment services combined.  So without innovation, traditional banking may become irrelevant very quickly.</p>
+<p>In June 2016, <a href="http://www.bbc.co.uk/news/business-36702175" target="_blank" rel="external">Bank of England governor Mark Carney</a>, said: <em>“Fintech will change the nature of money, shake the foundations of central banking and deliver nothing less than a democratic revolution for all who use financial services.”</em></p>
+<p>Companies such as <a href="https://www.creativereview.co.uk/cr-blog/2016/august/mondos-head-of-design-hugo-cornejo-on-designing-a-bank-for-the-digital-age/" target="_blank" rel="external">Mondo</a> have gone as far as creating their own modern Bank and has attracted a huge amount of attention and new customers.</p>
+<h1 id="Building-Open-Banking-Apps-on-Salesforce"><a href="#Building-Open-Banking-Apps-on-Salesforce" class="headerlink" title="Building Open Banking Apps on Salesforce"></a>Building Open Banking Apps on Salesforce</h1><img src="/images/salesforce-app-cloud-logo.png" class="img-topic">
+<p>The depth and breadth of features of the Salesforce platform should enable everyone to building the new wave of banking apps rapidly.  Let’s discuss some brief examples based on the categories of apps for the Barclays Rise hack. </p>
+<h2 id="World-I-The-Consumer-Cosmos"><a href="#World-I-The-Consumer-Cosmos" class="headerlink" title="World I: The Consumer Cosmos"></a>World I: The Consumer Cosmos</h2><p>Managing bank account &amp; customer information and its associated workflows would be easy to do with <a href="https://developer.salesforce.com/trailhead/module/data_modeling" target="_blank" rel="external">Salesforce Data Modeling</a> and <a href="https://developer.salesforce.com/trailhead/module/business_process_automation" target="_blank" rel="external">Process Automation</a>.  Salesforce could become the aggregating platform for information across multiple bank accounts; credit card and mobile payment services.  Integration can be created without code using <a href="https://developer.salesforce.com/trailhead/module/lightning_connect" target="_blank" rel="external">Salesforce Connect services</a> or via custom services and <a href="https://developer.salesforce.com/trailhead/module/salesforce_heroku_integration" target="_blank" rel="external">Heroku Connect</a>.</p>
+<p>Customers would have a single view of all their finances via <a href="https://developer.salesforce.com/trailhead/module/lex_implementation_reports_dashboards" target="_blank" rel="external">Reports &amp; Dashboards</a> to make informed choices.  Using <a href="https://developer.salesforce.com/trailhead/module/wave_analytics_basics" target="_blank" rel="external">Wave Analytics services</a>, payment decisions can be made in real time from information across any number of payment channels.</p>
+<p>Using the <a href="https://developer.salesforce.com/trailhead/module/lex_migration_introduction" target="_blank" rel="external">Salesforce Lightning Experience</a> would also provide a multi-device, responsive app that will engage the customer and give them the tools they need to effectively manage their finances.  The <a href="https://developer.salesforce.com/trailhead/module/lightning_design_system" target="_blank" rel="external">Salesforce Lightning Design System</a> gives a quality UX for your custom apps too.</p>
+<h2 id="World-II-Rebellion-of-the-Corporate-Treasurer"><a href="#World-II-Rebellion-of-the-Corporate-Treasurer" class="headerlink" title="World II: Rebellion of the Corporate Treasurer"></a>World II: Rebellion of the Corporate Treasurer</h2><p>Salesforce can be used as a platform to <a href="https://developer.salesforce.com/trailhead/en/module/advanced_formulas" target="_blank" rel="external">manage multiple currencies</a> and across multiple geographies, supporting complex payment management workflows with <a href="https://developer.salesforce.com/trailhead/module/business_process_automation" target="_blank" rel="external">process automation</a>. This would enabling treasurers to make sure their money is in the right place at the right time and in the right currency.</p>
+<p>With data security such as <a href="https://developer.salesforce.com/trailhead/en/module/data_security" target="_blank" rel="external">Audit Trails</a>, <a href="https://developer.salesforce.com/trailhead/en/module/event_monitoring" target="_blank" rel="external">Event Monitoring</a> and <a href="https://developer.salesforce.com/trailhead/module/lex_implementation_reports_dashboards" target="_blank" rel="external">Reports</a> built into the platform, much of the features needed for these services would be at hand.  <a href="https://developer.salesforce.com/trailhead/en/module/spe_admins" target="_blank" rel="external">Salesforce Platform Encryption</a> ensures that this sensitive financial information is managed securely and within compliance.</p>
+<p>And of course there are single sign-on and 2 Factor authentication services to ensure the correct people have easy to use and secure access.</p>
+<h2 id="World-III-The-Payments-Parallax"><a href="#World-III-The-Payments-Parallax" class="headerlink" title="World III: The Payments Parallax"></a>World III: The Payments Parallax</h2><p>Using <a href="https://www.heroku.com/" target="_blank" rel="external">Heroku</a> you can deploy and scale your own “intelligent bots” to allow customers to get an initial mortgage assessment as they were walking around the property they were viewing.</p>
+<p>Entering the postcode (zipcode) and a few simple facts about the property could give you a range of mortgage offers, home insurance quotes and information on local council tax rates. </p>
+<p>By pulling in data from smart meters, customers could assess how much they would pay on gas, electricity and water for the property.  All this would help the customer know how affordable their house is and what would be the true cost of buying a home, all from a few simple questions.</p>
+<p>Many <a href="https://en.wikipedia.org/wiki/Financial_technology" target="_blank" rel="external">Financial Technology (FinTech)</a> solutions require the transfer of sensitive information, so you could build custom solutions using the BlockChain.  By using Heroku elements such as a <a href="https://elements.heroku.com/buttons/kmhouk/service-my-wallet-v3" target="_blank" rel="external">Blockchain Wallet</a>, <a href="https://elements.heroku.com/addons/shocard" target="_blank" rel="external">Blockchain user management</a> or a complete <a href="https://elements.heroku.com/buttons/coinbase/toshi" target="_blank" rel="external">Blockchain protocol implementation</a> would speed up development of such a service.</p>
+<p>Deliver a service to where your customers spend their time, using either the free <a href="https://developer.salesforce.com/trailhead/en/module/salesforce1_mobile_app" target="_blank" rel="external">Salesforce1 Mobile client</a> or creating your own <a href="https://developer.salesforce.com/trailhead/en/project/mobile-sdk-hybrid-apps" target="_blank" rel="external">hybrid</a> or <a href="https://developer.salesforce.com/trailhead/en/module/mobile_sdk_introduction" target="_blank" rel="external">native</a> apps with Salesforce.  Or integrate with virtual assistants such as Siri, Google Now &amp; Cortana to enhance the customer experience whilst still providing traditional services customers expect from financial transactions.</p>
+<p>These are just a few simple ideas of how you could get started building something amazing and make a real changing to the way we use banking.  I look forward to seeing what you create.</p>
+<h1 id="Join-in-the-new-generation-of-banking"><a href="#Join-in-the-new-generation-of-banking" class="headerlink" title="Join in the new generation of banking"></a>Join in the new generation of banking</h1><p>Registration for <a href="http://risehackathon.com/" target="_blank" rel="external">Rise Hackathon - Episode II: The Bank Awakens</a> is now open, until September 11th.  The Hackathon itself takes place on 24th &amp; 25th September.  So join us and shape the future of customer interaction with banking services</p>
+<p>See you there and may the force of the <a href="https://developer.salesforce.com" target="_blank" rel="external">Salesforce App Cloud</a> be with you.</p>
+<p>Thank you.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/images/salesforce-app-cloud-logo.png&quot; class=&quot;img-thumbnail&quot;&gt;
+&lt;p&gt;Inviting all admins &amp;amp; developers to create a new generation of innovative Open Banking apps on the Salesforce App Cloud. &lt;/p&gt;
+&lt;p&gt;Salesforce are a technology partner for the &lt;a href=&quot;http://risehackathon.com/&quot;&gt;Barclays Rise Hackathon - Episode II: The Bank Awakens&lt;/a&gt; event and we will be there in force to help everyone build consumer, commercial and autonomous banking apps.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="event" scheme="http://agileforce.co.uk/categories/event/"/>
+    
+    
+      <category term="hackathon" scheme="http://agileforce.co.uk/tags/hackathon/"/>
+    
+      <category term="barclays" scheme="http://agileforce.co.uk/tags/barclays/"/>
+    
+      <category term="open-banking" scheme="http://agileforce.co.uk/tags/open-banking/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Getting Started With Salesforce App Cloud</title>
+    <link href="http://agileforce.co.uk/2016/07/getting-started-with-salesforce-app-cloud.html"/>
+    <id>http://agileforce.co.uk/2016/07/getting-started-with-salesforce-app-cloud.html</id>
+    <published>2016-07-25T08:22:22.000Z</published>
+    <updated>2017-04-11T14:33:54.595Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>With Salesforce App Cloud you can rapidly create business apps with Force.com and deploy &amp; scale bespoke apps using Heroku.  Salesforce App Cloud is a entirely hosted platform which offers free developer environments (no credit card required).</p>
+<p>Lets take a high level view of the Salesforce App Cloud, specifically Force.com and Heroku.</p>
+<a id="more"></a>
+<img src="/images/forcedotcom-concept.png" class="img-topic">
+<h1 id="Force-com-apps-amp-services-for-your-business"><a href="#Force-com-apps-amp-services-for-your-business" class="headerlink" title="Force.com - apps &amp; services for your business"></a>Force.com - apps &amp; services for your business</h1><p><a href="https://developer.salesforce.com/platform/force.com" target="_blank" rel="external">Force.com</a> is for building apps that support the people in your organisation and as a single source of data for all your enterprise services.  Force.com also has reporting &amp; analytics tools and API’s for visualising and interpreting data.</p>
+<p>Force.com provides a central application server, abstracted database and enterprise services all available via a range of <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_overview" target="_blank" rel="external">open API’s</a>.</p>
+<p>Applications are created by modeling objects, defining business processes and configuring UI elements, all without having to write code.  Any additional custom business logic is written in Apex (a Java like language) and custom UI can be coded in HTML5 or Javascript frameworks, such as <a href="https://developer.salesforce.com/trailhead/en/module/lex_dev_lc_basics" target="_blank" rel="external">Salesforce Lightning Components</a>.</p>
+<h1 id="Heroku-scaling-custom-apps-amp-services"><a href="#Heroku-scaling-custom-apps-amp-services" class="headerlink" title="Heroku - scaling custom apps &amp; services"></a>Heroku - scaling custom apps &amp; services</h1><p><img src="/images/heroku-languages.png" alt="Heroku languages"></p>
+<p><a href="https://heroku.com" target="_blank" rel="external">Heroku</a> is like having your own personal DevOps team at your fingertips.  You can write custom applications in your favorite language, framework or architecture and let Heroku deploy and scale them for you easily.</p>
+<p>Heroku also provides a range of on-demand Relational &amp; NoSQL databases and 150+ other services to speed up the development process.  Create a Postgres, Redis, Mongodb or Kafka persistence service at the click of the button.</p>
+<p>See how easy it is to deploy and scale your favorite language with the <a href="https://devcenter.heroku.com/start" target="_blank" rel="external">Heroku Getting Started Guides</a>.</p>
+<h1 id="Integrating-your-Apps-with-Salesforce-via-Force-com"><a href="#Integrating-your-Apps-with-Salesforce-via-Force-com" class="headerlink" title="Integrating your Apps with Salesforce via Force.com"></a>Integrating your Apps with Salesforce via Force.com</h1><p>Force.com has <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_overview" target="_blank" rel="external">a wide range of secure API’s</a> with which to integrate your own applications.  Any applications built on top of Force.com automatically become available via the Salesforce APIs.</p>
+<p>Typically your own applications will use the <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_soap" target="_blank" rel="external">Salesforce SOAP API</a> or <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_rest" target="_blank" rel="external">REST API</a> for integration.  Other common API’s include the <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_bulk" target="_blank" rel="external">Bulk API</a> for loading large data sets and <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_streaming" target="_blank" rel="external">Streaming API</a> which lets you push a stream of notifications from Salesforce.  Salesforce also provides the <a href="https://developer.salesforce.com/page/Introduction_to_the_Force.com_Web_Services_Connector" target="_blank" rel="external">Force.com Web Services Connector</a>, a high-performing Web services client stack implemented with a streaming parser that is the preferred tool for working with salesforce.com APIs.</p>
+<p>To call your own API’s and services from Salesforce, we provide <a href="https://developer.salesforce.com/trailhead/module/apex_integration_services" target="_blank" rel="external">Apex Integration Services</a>.</p>
+<p>All the Salesforce API’s are available from any applications that are defined as Trusted in Salesforce and run over HTTPS, such as those deployed on <a href="https://heroku.com" target="_blank" rel="external">Heroku</a>.  Those Heroku deployed apps also have the <a href="https://developer.salesforce.com/trailhead/module/lightning_connect" target="_blank" rel="external">Salesforce Connect service</a> available via (Heroku Postgres)[<a href="https://postgres.heroku.com" target="_blank" rel="external">https://postgres.heroku.com</a>] to automatically synchronise data between Salesforce and your custom applications.</p>
+<h1 id="Trailhead-learning-App-Cloud"><a href="#Trailhead-learning-App-Cloud" class="headerlink" title="Trailhead - learning App Cloud"></a>Trailhead - learning App Cloud</h1><img src="/images/trailhead-banner.png" class="img-topic">
+<p>We created Trailhead to interactively help to build applications on the Salesforce App Cloud, asking questions and setting challenges so you can evaluate your skills along the way.  If you are just starting with Salesforce, try the <a href="https://developer.salesforce.com/trailhead/trail/force_com_dev_beginner" target="_blank" rel="external">Developer Beginner trail</a>.</p>
+<h1 id="Sign-up-Free-Developer-Environments"><a href="#Sign-up-Free-Developer-Environments" class="headerlink" title="Sign up Free Developer Environments"></a>Sign up Free Developer Environments</h1><p>Force.com - sign up at <a href="https://developer.salesforce.com/trailhead" target="_blank" rel="external">https://developer.salesforce.com/trailhead</a> for a Trailhead login to track your progress.  The same account also gives you a free Force.com developer environment with all the features of a production enviroment, only limited by number of accounts &amp; rows of data.</p>
+<p>Heroku - sign up at <a href="http://heroku.com" target="_blank" rel="external">http://heroku.com</a> and download the <a href="https://toolbelt.heroku.com" target="_blank" rel="external">Heroku CLI</a> tool and start deploying your apps, provisioning services and getting back to focusing on your app development.</p>
+<p>In the next article in this series we will discuss Open Banking applications and services to help inspire your own ideas on how you could use the Salesforce App Cloud.  In the mean time, checkout <a href="https://developer.salesforce.com" target="_blank" rel="external">developer.salesforce.com</a> for more examples of building apps in the Cloud.</p>
+<p>Thank you<br>John Stevenson<br><a href="https://twitter.com/jr0cket" target="_blank" rel="external">@jr0cket</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/images/salesforce-app-cloud-logo.png&quot; class=&quot;img-thumbnail&quot;&gt;
+&lt;p&gt;With Salesforce App Cloud you can rapidly create business apps with Force.com and deploy &amp;amp; scale bespoke apps using Heroku.  Salesforce App Cloud is a entirely hosted platform which offers free developer environments (no credit card required).&lt;/p&gt;
+&lt;p&gt;Lets take a high level view of the Salesforce App Cloud, specifically Force.com and Heroku.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="app-cloud" scheme="http://agileforce.co.uk/categories/app-cloud/"/>
+    
+    
+      <category term="app-cloud" scheme="http://agileforce.co.uk/tags/app-cloud/"/>
+    
+      <category term="beginners" scheme="http://agileforce.co.uk/tags/beginners/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>London&#39;s Calling You, Salesforce</title>
+    <link href="http://agileforce.co.uk/2016/02/londons-calling-you-salesforce-part1.html"/>
+    <id>http://agileforce.co.uk/2016/02/londons-calling-you-salesforce-part1.html</id>
+    <published>2016-02-05T10:30:33.000Z</published>
+    <updated>2017-04-11T14:33:54.595Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/images/londons-calling-banner.png" class="img-topic">
+<p><a href="http://www.londonscalling.net" target="_blank" rel="external">London’s Calling</a> to all the far away towns &amp; cities of the UK for the last few months and the Salesforce community answered that call, turning up in their hundreds.</p>
+<p>So today I have been surrounded by many of the brightest and best minds in the UK and across Europe &amp; the Middle East too.</p>
+<p>Here is what I discovered today in several parts:</p>
+<ul>
+<li>Part 1: Getting Agile with Salesforce &amp; Testing</li>
+<li>Part 2: A career of fun &amp; discovery</li>
+<li>Part 3: Lightning to the Salesforce nation</li>
+</ul>
+<a id="more"></a>
+<h1 id="Getting-Agile-with-Salesforce-amp-Testing"><a href="#Getting-Agile-with-Salesforce-amp-Testing" class="headerlink" title="Getting Agile with Salesforce &amp; Testing"></a>Getting Agile with Salesforce &amp; Testing</h1><img src="/images/tdd-circle-of-life.png" class="img-topic">
+<p>There are several sessions on testing at London’s calling and testing is a valuable technique in agile development.</p>
+<ul>
+<li><a href="http://www.londonscalling.net/sessions/test-driven-development-in-apex-and-why-you-should-be-using-it/" target="_blank" rel="external">Test Driven Development (TDD) in Apex &amp; why you should be using it</a> by <a href="https://twitter.com/CAldridg3" target="_blank" rel="external">Chris Aldridge - @CAldridg3</a></li>
+</ul>
+<p>As a developer you quickly learn that tests are an important part of writing code on the Salesforce platform, after all you need a minimum of 75% code coverage in order to deploy your code into production.  Tests are more than just a requirement, they can also help you create a good design for your code.</p>
+<p>Using Test Driven Development (TDD) encourages a good architecture with  separation of concerns and decoupled dependencies.  Developers experienced with TDD typically spend less time debugging code as they spend less time writing those bugs in the first place.  The code tends to be shorter (easier to read) and less complex (easier to understand).</p>
+<p>Iterative development keeps you focused on a single task at a time and stops you wasting time on all the things that could be or should be.  TDD makes it easier and safer to change your code (it is called soft-ware after all).  Instant feedback on the code that you are writing and therefore regular testing of your assumptions</p>
+<p>When you have done a few months of the TDD approach then you will notice an unprecedented code coverage, so you never have to worry about meeting the 75% code coverage.</p>
+<p>Sow what is test driven development (TDD)? It’s more than just writing tests before writing code.  I like to think of TDD as  Chris’ preferred definition is:</p>
+<p><strong>“the technique of using automated unit tests to drive the design of software and force decoupling of dependencies”</strong></p>
+<p>A unit test is an automated test in which the smallest testable parts of an application are individual tested.  A unit test should be:</p>
+<ul>
+<li>isoloated &amp; independent</li>
+<li>one behaviour per test</li>
+<li>arrange (set up test data )- act (calling the method) - assert (did it do what it was supposed to)</li>
+<li>deterministic</li>
+<li>remove dependencies - too many dependencies add complexity to your testing and code</li>
+<li>readable</li>
+</ul>
+<p>The process of test driven development is typically</p>
+<ol>
+<li>add a test</li>
+<li>run all tests; the new test should fail</li>
+<li>wrote some code</li>
+<li>run tests</li>
+<li>new test passes</li>
+<li>refactor - can I make this specific piece of code better</li>
+<li>see step 1</li>
+</ol>
+<blockquote>
+<p>TDD mantra: all code is guilty until proven innocent </p>
+</blockquote>
+<p>Chris walked us through the TDD approach he told for a simple project, calculating if a date is a Leap year.  See the <a href="https://github.com/ChrisAldridge/LondonsCalling" target="_blank" rel="external">Leap Years TDD Exercise for London’s Callling on Github</a>.</p>
+<p>Developers and engineers in almost every major programming language already getting great value from Test Driven Development, so surely its time you can also benefit from this technique.</p>
+<ul>
+<li><a href="http://www.londonscalling.net/sessions/writing-sustainable-and-maintainable-apex-tests/" target="_blank" rel="external">Writing sustainable and maintainable Apex Tests</a> by <a href="https://twitter.com/srlawr" target="_blank" rel="external">Simon Lawrence - @srlawr</a> of <a href="https://twitter.com/desynit" target="_blank" rel="external">Desynit</a> - <strong>1.30 Alt room</strong></li>
+</ul>
+<blockquote>
+<p>Also take a look at <a href="https://adtennant.co.uk/blog/2016/01/25/writing-true-unit-tests-using-dependency-injection-mocking-apex/" target="_blank" rel="external">Writing True Unit Tests using Dependency Injection and Mocking in Apex</a> by <a href="https://twitter.com/adtennant" target="_blank" rel="external">Alex Tennant</a></p>
+</blockquote>
+<ul>
+<li><a href="">Unit tests - they’re not just for Apex!</a> by <a href="https://twitter.com/bob_buzzard" target="_blank" rel="external">Keir Bowden - @bobbuzard</a>, CTO of <a href="">BrightGen</a></li>
+</ul>
+<p>We are building responsive &amp; reactive applications more and more, to meet the needs of our customers.</p>
+<p>Wwhilst many developers are writing tests &amp; even TDD for most languages, when it comes to JavaScript its another story.  Two big issues that affect JavaScript testing on the platform are:</p>
+<ul>
+<li>no mandate for a minimum level of test coverage</li>
+<li>no built in JavaScript testing on the platform (yet)</li>
+</ul>
+<p>Challenges<br>No test context for client</p>
+<ul>
+<li>changes are not rolled back</li>
+</ul>
+<p>writing testable code</p>
+<ul>
+<li>unobtrusive javascript - keep your code seperate from your HTML and CSS markup, otherwise you have to replicate this markup in orde to test</li>
+</ul>
+<p>Avoid anonymous functions</p>
+<p>functional decomposition so I can focus on the business logic</p>
+<ul>
+<li>function to decide on a ction</li>
+<li>function to take an action</li>
+</ul>
+<p>QUnit<br>A generic javascript unit testing framework<br>use it as local files rather than CDN’s<br>executes in the browser</p>
+<p>qunit concepts<br>module is a group of tests<br>test is a single test<br>assert - confirm behaviour</p>
+<p>sinon.js<br>pure javascript<br>spys allow you to wrap the existing functions and records executions &amp; paramterters<br>stubs - spies + replace functions<br>mocks - stubs + expected behaviour (rarely used)</p>
+<p>Blanket.js<br>code coverage for your javascript for QUnit, Mocha &amp; jasmin (with an api for other libraries)</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>London’s Calling has been an amazing community driven event and I give my thanks to the organisers who spend months in the planning of this event.  Also thanks to the sponsors that helped make this possible and of course all the amazing people who spoke or attended the event.</p>
+<p>Thank you all.<br><a href="John Stevenson - @jr0cket">https://twitter.com/jr0cket</a></p>
+<blockquote>
+<p>London calling, yes, I was there, too.<br>An’ you know what they said? Well, some of it was true!<br>London calling at the top of the dial<br>After all this, won’t you give me a smile?<br>London calling</p>
+<p>I never felt so much alike [fading] alike alike alike</p>
+<p>Copywright: The Clash, 1979</p>
+</blockquote>
+<p><img src="/images/salesforce-trailhead-battlestation-banner.png" alt="Trailhead - Battlestations"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/images/londons-calling-banner.png&quot; class=&quot;img-topic&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.londonscalling.net&quot;&gt;London’s Calling&lt;/a&gt; to all the far away towns &amp;amp; cities of the UK for the last few months and the Salesforce community answered that call, turning up in their hundreds.&lt;/p&gt;
+&lt;p&gt;So today I have been surrounded by many of the brightest and best minds in the UK and across Europe &amp;amp; the Middle East too.&lt;/p&gt;
+&lt;p&gt;Here is what I discovered today in several parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Part 1: Getting Agile with Salesforce &amp;amp; Testing&lt;/li&gt;
+&lt;li&gt;Part 2: A career of fun &amp;amp; discovery&lt;/li&gt;
+&lt;li&gt;Part 3: Lightning to the Salesforce nation&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="events" scheme="http://agileforce.co.uk/categories/events/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Managing Metadata With Git and Force CLI</title>
+    <link href="http://agileforce.co.uk/2014/10/managing-metadata-with-git-and-force-cli.html"/>
+    <id>http://agileforce.co.uk/2014/10/managing-metadata-with-git-and-force-cli.html</id>
+    <published>2014-10-11T08:25:09.000Z</published>
+    <updated>2017-04-11T14:33:54.595Z</updated>
+    
+    <content type="html"><![CDATA[<p>  In this article we will show you how to save the app you are building for the Salesforce Hackathon in Git using the Salesforce Force.com CLI.</p>
+<blockquote>
+<p>The Force.com CLI is a really powerful tool for interacting with your Salesforce Org.  You can create new custom object, run queries and in this case download all the Metadata or any part of the Metadata from your Org.</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="Clone-the-BeMyApp-repository"><a href="#Clone-the-BeMyApp-repository" class="headerlink" title="Clone the BeMyApp repository"></a>Clone the BeMyApp repository</h2><p>You should have recieved a repository from BeMyApp, called something similar to <code>repository-123</code>.  Using a Git client such as Github for <a href="https://mac.github.com" target="_blank" rel="external">Mac</a>/<a href="https://windows.github.com" target="_blank" rel="external">Windows</a>, <a href="http://sourcetreeapp.com/" target="_blank" rel="external">SourceTree</a> or <a href="http://git-scm.com" target="_blank" rel="external">Git command line</a>.</p>
+<p>The Git command line is:</p>
+<pre><code>git clone https://github.com/bemyapp/repository-123.git
+</code></pre><h2 id="Getting-Saleforce-Org-Metadata-using-the-Force-com-CLI"><a href="#Getting-Saleforce-Org-Metadata-using-the-Force-com-CLI" class="headerlink" title="Getting Saleforce Org Metadata using the Force.com CLI"></a>Getting Saleforce Org Metadata using the Force.com CLI</h2><p>First you need to create an unmanaged package in your Salesforce Org, containing all the artefacts you want to manage.  If you create an App in your Salesforce Org then simply add that.</p>
+<img src="/images/salesforce-gardening-packages-new.png" class="img">
+<p>If you created an App in your Salesforce Org, then you can simply add that App and it will include all the relevant metadata.</p>
+<img src="/images/salesforce-gardening-package-add-app.png" class="img">
+<blockquote>
+<p>If you have created a Custom App and included tabs for you Custom Objects and Visuforce Pages and Canvas Pages to the Custom App the Force.com platform will automatically add any dependent resource such as Apex classes and Static Resources for you.</p>
+</blockquote>
+<h2 id="Installing-the-Force-com-CLI"><a href="#Installing-the-Force-com-CLI" class="headerlink" title="Installing the Force.com CLI"></a>Installing the Force.com CLI</h2><p>Download the appropriate file for either <a href="https://github.com/heroku/force/raw/master/binaries/darwin-386/force" target="_blank" rel="external">MacOSX</a>, <a href="https://github.com/heroku/force/raw/master/binaries/windows-386/force.exe" target="_blank" rel="external">Windows</a> or <a href="https://github.com/heroku/force/raw/master/binaries/linux-386/force" target="_blank" rel="external">Linux</a>.</p>
+<p>Save this file to a place on your operating sytem execution path (<code>$PATH</code>)</p>
+<blockquote>
+<p>On Mac &amp; Linux you can move the <code>force</code> file in the directory <code>/usr/local/bin</code> using the command <code>sudo mv force /usr/local/bin</code>.</p>
+</blockquote>
+<h2 id="Using-the-CLI-to-get-an-unmanaged-package"><a href="#Using-the-CLI-to-get-an-unmanaged-package" class="headerlink" title="Using the CLI to get an unmanaged package"></a>Using the CLI to get an unmanaged package</h2><p>You can use the force cli to download and unpack the package you created in your Salesforce Org into a folder called <code>metadata</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">force fetch package &lt;packagename&gt; --unpack</div></pre></td></tr></table></figure>
+<p>A browser window will open and you are prompted to enter your Salesforce Org username and password.  Then select <code>Allow</code> so the force cli tool can connect to your Salesforce Org and download your package.</p>
+<blockquote>
+<p>If you are using Chrome, you may experience a blank page after allowing access from Force CLI.  In the browser URL window, click the sheild icon on the right hand side and select “Run insecure script”</p>
+</blockquote>
+<p>You should now have a directory called <code>metadata</code> in which is a sub-directory named after your package.  This sub-directory contains all the artifacts that you specified when you created your unmanaged package (custom objects, custom fields, page layouts, etc).</p>
+<h2 id="Saving-your-changes-to-Github"><a href="#Saving-your-changes-to-Github" class="headerlink" title="Saving your changes to Github"></a>Saving your changes to Github</h2><p>Once the metadata is downloaded, your add and commit all the files to your local git repository as usual.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &quot;first git challenge&quot;</div></pre></td></tr></table></figure>
+<p>Now you can share that commit with the repository given to you by BeMyApp using the command</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<p>Now get back to hacking your App.</p>
+<p>Thank you</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  In this article we will show you how to save the app you are building for the Salesforce Hackathon in Git using the Salesforce Force.com CLI.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Force.com CLI is a really powerful tool for interacting with your Salesforce Org.  You can create new custom object, run queries and in this case download all the Metadata or any part of the Metadata from your Org.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="force" scheme="http://agileforce.co.uk/tags/force/"/>
+    
+      <category term="git" scheme="http://agileforce.co.uk/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Getting Started With Github for Versioning Salesforce Metadata</title>
+    <link href="http://agileforce.co.uk/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html"/>
+    <id>http://agileforce.co.uk/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html</id>
+    <published>2014-10-10T18:42:57.000Z</published>
+    <updated>2017-04-11T14:33:54.595Z</updated>
+    
+    <content type="html"><![CDATA[<p>Using <a href="http://git-scm.com/" target="_blank" rel="external">Git</a>, <a href="https://github.com" target="_blank" rel="external">Github</a> and the <a href="https://developer.salesforce.com/page/Force.com_IDE" target="_blank" rel="external">Force.com CLI</a> you can easily record all the changes you make to the behaviour of your Salesforce Org.  Having a history of all the changes can be invaluable, allowing an easy way to track down issues and document how your Org was developed.</p>
+<blockquote>
+<p>In this guide we will cover a very easy way to use Git and the essentials of the Force.com CLI.  You can of course download all your Salesforce Org Metadata with other tools such as <a href="http://mavensmate.com/" target="_blank" rel="external">MavensMate</a> and <a href="https://developer.salesforce.com/page/Force.com_IDE" target="_blank" rel="external">Force.com IDE</a>.</p>
+</blockquote>
+<a id="more"></a>
+<div align="center"><br><iframe src="//www.slideshare.net/slideshow/embed_code/40125265" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; max-width: 100%;" allowfullscreen> </iframe><br><div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/JR0cket/dreamforce14-metadata-management-with-git-version-control" title="Dreamforce14 Metadata Management with Git Version Control" target="_blank">Dreamforce14 Metadata Management with Git Version Control</a> </strong> from <strong><a href="http://www.slideshare.net/JR0cket" target="_blank">John Stevenson</a></strong> </div></div>
+
+<h2 id="Getting-Started-with-Github"><a href="#Getting-Started-with-Github" class="headerlink" title="Getting Started with Github"></a>Getting Started with Github</h2><p><a href="https://github.com" target="_blank" rel="external">Github</a> is a cloud service for managing source code and configuration files.  You can use it manage all the changes you make to any text files in your project and easily share those changes with other developers.   Github also gives a visual way to compare changes between versions (a visual diff).</p>
+<p>As all the Metadata in your Salesforce Org is essentially a collection of text filescontaining XML, then its easy to use Github to manage all your changes.  You can of course also manage all your Apex, Visualforce, JavaScript and HTML5 code too.</p>
+<p>To get started:</p>
+<p>1)  create a free account on <a href="https://github.com" target="_blank" rel="external">Github</a><br>2)  install the Github desktop app (<a href="https://mac.github.com/" target="_blank" rel="external">MacOSX</a> or <a href="https://windows.github.com/" target="_blank" rel="external">Microsoft Windows</a>)</p>
+<h2 id="Create-a-Github-Repository-for-your-Salesforce-Metadata"><a href="#Create-a-Github-Repository-for-your-Salesforce-Metadata" class="headerlink" title="Create a Github Repository for your Salesforce Metadata"></a>Create a Github Repository for your Salesforce Metadata</h2><p>Once you have your Github account you can create a new repository.  A repository is a simple data store that will hold all the changes made in your project.</p>
+<p>In this example I have created a Gardening app in my Salesforce developer org, so I will created a repository on Github called gardening-app</p>
+<p><img src="/images/s1-github-repository-new-gardening-app.png" alt=""></p>
+<h2 id="Setting-up-the-Github-App"><a href="#Setting-up-the-Github-App" class="headerlink" title="Setting up the Github App"></a>Setting up the Github App</h2><p>Run the Github desktop app installed earlier.  If this is the first time you have used the Github app, you will need to configure it with your Github login details:</p>
+<p><img src="/images/github-app-login.png" alt=""></p>
+<p>Next you need to tell Github app your name and email address.  This is used to record who has created a change in your repository.  Its common practice to use the same name and email address you used when you created your Github account.</p>
+<p><img src="/images/github-app-config-identity.png" alt=""></p>
+<p>Finally, the Github app will check your computer for existing Git repositories.  If you do not have any or do not wish to add any repositories on your computer at this time then just press <strong>Done</strong>.</p>
+<h2 id="Using-the-Github-App-to-download-the-Gardening-App-repository"><a href="#Using-the-Github-App-to-download-the-Gardening-App-repository" class="headerlink" title="Using the Github App to download the Gardening App repository"></a>Using the Github App to download the Gardening App repository</h2><p>So far, the Gardening App repository I created is only on Github.  Whilst you can add and edit files via the Github website, if you are working on more than one file at a time it is easier to copy the repository to your computer.</p>
+<img src="/images/github-repository-clone-steps.png" class="img-topic">
+<p>The Github app makes copying a repository easy and uses the term Clone.</p>
+<p>1) Click the Add button</p>
+<p>2) Select Clone</p>
+<p>3) Select the Gardening repository or type in the name of your repository if you have many repositories already on Github</p>
+<p>4) Select the Clone button to copy all the files of the repository from Github to your computer.</p>
+<p>You are then prompted as to where you want the files to be created.</p>
+<p>In my project directory I have a directory called salesforce which I selected as the destination.  The repository from Github is then copied into a file called s1-gardening-app in the salesforce directory.</p>
+<p><img src="/images/github-app-repository-no-changes.png" alt=""></p>
+<p>Any files you add or changes you make to existing files will be detected automatically by the Github app.  So its time to get the Metadata from your Salesforce Org</p>
+<p>You are now ready to get the metadata from your Salesforce Org and version it with Git.  See the article on how to <a href="http://agileforce.co.uk/managing-metadata-with-git-and-force-cli">manage metadata with Git and Force CLI</a> for details on how to do this.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Using &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt;, &lt;a href=&quot;https://github.com&quot;&gt;Github&lt;/a&gt; and the &lt;a href=&quot;https://developer.salesforce.com/page/Force.com_IDE&quot;&gt;Force.com CLI&lt;/a&gt; you can easily record all the changes you make to the behaviour of your Salesforce Org.  Having a history of all the changes can be invaluable, allowing an easy way to track down issues and document how your Org was developed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In this guide we will cover a very easy way to use Git and the essentials of the Force.com CLI.  You can of course download all your Salesforce Org Metadata with other tools such as &lt;a href=&quot;http://mavensmate.com/&quot;&gt;MavensMate&lt;/a&gt; and &lt;a href=&quot;https://developer.salesforce.com/page/Force.com_IDE&quot;&gt;Force.com IDE&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="force" scheme="http://agileforce.co.uk/tags/force/"/>
+    
+      <category term="git" scheme="http://agileforce.co.uk/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Welcome to AgileForce</title>
+    <link href="http://agileforce.co.uk/2014/09/welcome-to-agileforce.html"/>
+    <id>http://agileforce.co.uk/2014/09/welcome-to-agileforce.html</id>
+    <published>2014-09-03T18:42:57.000Z</published>
+    <updated>2017-04-11T14:33:54.595Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to the AgileForce website, a community site to help you learn how to create apps on the Salesforce platform using Agile principles and practices.</p>
+<p>The Salesforce platform itstelf is developed in an agile mannor by the teams at Salesforce, using a mixture of practices from Scrum and Lean software development.  We will try to give some insight into the practices used, helping demonstrate how Salesforce created a platform you can trust.</p>
+<p>This site will be a mixture of articles, tutorials and workshops to help you on your journey with the Salesforce platform.  To start with, here are several workshops that help you gain practical experience with the Salesforce platform</p>
+<a id="more"></a>
+<h2 id="Workshops"><a href="#Workshops" class="headerlink" title="Workshops"></a>Workshops</h2><ul>
+<li><p><a href="https://developer.salesforce.com/trailhead" target="_blank" rel="external">Salesforce Trailhead</a> - a range of workshops with challenges and a chance to earn badges</p>
+</li>
+<li><p><a href="http://jr0cket.co.uk/salesforce-admin-workshop/" target="_blank" rel="external">Admin Workshop</a> - create a Salesforce App without requiring any code</p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/salesforce1-app-tutorial/" target="_blank" rel="external">Salesforce 1 Mobile App development</a> - build an expense report mobile application in Salesforce 1 mobile without needing to code</p>
+</li>
+<li><p><a href="http://jr0cket.co.uk/salesforce-apex-for-admins-workshop/" target="_blank" rel="external">Apex for Admins</a> - your first steps into coding on the Salesforce Platform</p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/salesforce-developer-workshop/" target="_blank" rel="external">Developer workshop</a> - clicking and coding a conference management application </p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/salesforce-developer-advanced/" target="_blank" rel="external">Developer advanced workshop</a> - using JavaScript within Visualforce pages, OAuth, JavaScript remoting to Salesforce and Canvas to build a conference management app.</p>
+</li>
+<li><p><a href="http://ccoenraets.github.io/getting-started-lightning-components/" target="_blank" rel="external">Lightning components workshop</a> - create components &amp; custom events to communicate between them, using JavaScript &amp; CSS libraries in components and integration with the Salesforce1 app</p>
+</li>
+<li><p><a href="https://www.udacity.com/course/ud162" target="_blank" rel="external">Udacity: Intro to point &amp; click development on Salesforce</a> - a complete and free course with video tutorials (select “Access free course material”).</p>
+</li>
+</ul>
+<p>There are also workbooks and tutorials at the <a href="https://developer.salesforce.com" target="_blank" rel="external">developer.salesforce.com</a> website, along with free developer environments and all the other resources you may need.</p>
+<h2 id="Community-content"><a href="#Community-content" class="headerlink" title="Community content"></a>Community content</h2><p>There are many great tutorials in the wider Salesforce community, here are just a few:</p>
+<ul>
+<li><p><a href="http://th3silverlining.com/2014/06/06/a-beginners-guide-to-object-oriented-programming-with-apex/" target="_blank" rel="external">Beginners Guide to Object-Oriented Programming with Apex</a></p>
+</li>
+<li><p><a href="http://paulbattisson.com/category/salesforce/force-com-cast/" target="_blank" rel="external">Force.com Cast video tutorials</a></p>
+</li>
+<li><p><a href="http://www.sfdc99.com/beginner-tutorials/" target="_blank" rel="external">SF99 Beginner Tutorials</a> - Apex tutorials for point-and-click admins with lashings of Starwars references</p>
+</li>
+</ul>
+<p>Thank you<br>The AgileForce Team<br><a href="https://twitter.com/agileforce" target="_blank" rel="external">@agileforce</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to the AgileForce website, a community site to help you learn how to create apps on the Salesforce platform using Agile principles and practices.&lt;/p&gt;
+&lt;p&gt;The Salesforce platform itstelf is developed in an agile mannor by the teams at Salesforce, using a mixture of practices from Scrum and Lean software development.  We will try to give some insight into the practices used, helping demonstrate how Salesforce created a platform you can trust.&lt;/p&gt;
+&lt;p&gt;This site will be a mixture of articles, tutorials and workshops to help you on your journey with the Salesforce platform.  To start with, here are several workshops that help you gain practical experience with the Salesforce platform&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="workshops" scheme="http://agileforce.co.uk/categories/workshops/"/>
+    
+    
+      <category term="force" scheme="http://agileforce.co.uk/tags/force/"/>
+    
+      <category term="lightning" scheme="http://agileforce.co.uk/tags/lightning/"/>
+    
+  </entry>
+  
+</feed>

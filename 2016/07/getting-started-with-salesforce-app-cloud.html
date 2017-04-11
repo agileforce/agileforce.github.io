@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Getting Started With Salesforce App Cloud | Agileforce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="With Salesforce App Cloud you can rapidly create business apps with Force.com and deploy &amp;amp; scale bespoke apps using Heroku.  Salesforce App Cloud is a entirely hosted platform which offers free d">
+<meta name="keywords" content="app-cloud,beginners">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting Started With Salesforce App Cloud">
+<meta property="og:url" content="http://agileforce.co.uk/2016/07/getting-started-with-salesforce-app-cloud.html">
+<meta property="og:site_name" content="Agileforce">
+<meta property="og:description" content="With Salesforce App Cloud you can rapidly create business apps with Force.com and deploy &amp;amp; scale bespoke apps using Heroku.  Salesforce App Cloud is a entirely hosted platform which offers free d">
+<meta property="og:image" content="http://agileforce.co.uk/images/salesforce-app-cloud-logo.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/forcedotcom-concept.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/heroku-languages.png">
+<meta property="og:image" content="http://agileforce.co.uk/images/trailhead-banner.png">
+<meta property="og:updated_time" content="2017-04-11T14:33:54.595Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Getting Started With Salesforce App Cloud">
+<meta name="twitter:description" content="With Salesforce App Cloud you can rapidly create business apps with Force.com and deploy &amp;amp; scale bespoke apps using Heroku.  Salesforce App Cloud is a entirely hosted platform which offers free d">
+<meta name="twitter:image" content="http://agileforce.co.uk/images/salesforce-app-cloud-logo.png">
+<meta name="twitter:creator" content="@agileforce">
+  
+    <link rel="alternative" href="/atom.xml" title="Agileforce" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28030709-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Agileforce</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Agile Salesforce Development</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/lightning">Lightning</a>
+        
+          <a class="main-nav-link" href="/heroku-workshop">Heroku Workshop</a>
+        
+          <a class="main-nav-link" href="https://developer.salesforce.com">Salesforce Developers</a>
+        
+          <a class="main-nav-link" href="http://jr0cket.co.uk">jr0cket</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/jr0cket" target="_blank"></a>
+        <a id="nav-linkedin-link" class="nav-icon" href="https://uk.linkedin.com/in/jr0cket" target="_blank"></a>
+        <a id="nav-twitter-link" class="nav-icon" href="https://twitter.com/jr0cket" target="_blank"></a>
+        <a id="nav-googleplus-link" class="nav-icon" href="https://plus.google.com/117080433375668558463" target="_blank"></a>
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://agileforce.co.uk"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-getting-started-with-salesforce-app-cloud" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/getting-started-with-salesforce-app-cloud.html" class="article-date">
+  <time datetime="2016-07-25T08:22:22.000Z" itemprop="datePublished">25 Jul 2016</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/app-cloud/">app-cloud</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Getting Started With Salesforce App Cloud
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>With Salesforce App Cloud you can rapidly create business apps with Force.com and deploy &amp; scale bespoke apps using Heroku.  Salesforce App Cloud is a entirely hosted platform which offers free developer environments (no credit card required).</p>
+<p>Lets take a high level view of the Salesforce App Cloud, specifically Force.com and Heroku.</p>
+<a id="more"></a>
+<img src="/images/forcedotcom-concept.png" class="img-topic">
+<h1 id="Force-com-apps-amp-services-for-your-business"><a href="#Force-com-apps-amp-services-for-your-business" class="headerlink" title="Force.com - apps &amp; services for your business"></a>Force.com - apps &amp; services for your business</h1><p><a href="https://developer.salesforce.com/platform/force.com" target="_blank" rel="external">Force.com</a> is for building apps that support the people in your organisation and as a single source of data for all your enterprise services.  Force.com also has reporting &amp; analytics tools and API’s for visualising and interpreting data.</p>
+<p>Force.com provides a central application server, abstracted database and enterprise services all available via a range of <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_overview" target="_blank" rel="external">open API’s</a>.</p>
+<p>Applications are created by modeling objects, defining business processes and configuring UI elements, all without having to write code.  Any additional custom business logic is written in Apex (a Java like language) and custom UI can be coded in HTML5 or Javascript frameworks, such as <a href="https://developer.salesforce.com/trailhead/en/module/lex_dev_lc_basics" target="_blank" rel="external">Salesforce Lightning Components</a>.</p>
+<h1 id="Heroku-scaling-custom-apps-amp-services"><a href="#Heroku-scaling-custom-apps-amp-services" class="headerlink" title="Heroku - scaling custom apps &amp; services"></a>Heroku - scaling custom apps &amp; services</h1><p><img src="/images/heroku-languages.png" alt="Heroku languages"></p>
+<p><a href="https://heroku.com" target="_blank" rel="external">Heroku</a> is like having your own personal DevOps team at your fingertips.  You can write custom applications in your favorite language, framework or architecture and let Heroku deploy and scale them for you easily.</p>
+<p>Heroku also provides a range of on-demand Relational &amp; NoSQL databases and 150+ other services to speed up the development process.  Create a Postgres, Redis, Mongodb or Kafka persistence service at the click of the button.</p>
+<p>See how easy it is to deploy and scale your favorite language with the <a href="https://devcenter.heroku.com/start" target="_blank" rel="external">Heroku Getting Started Guides</a>.</p>
+<h1 id="Integrating-your-Apps-with-Salesforce-via-Force-com"><a href="#Integrating-your-Apps-with-Salesforce-via-Force-com" class="headerlink" title="Integrating your Apps with Salesforce via Force.com"></a>Integrating your Apps with Salesforce via Force.com</h1><p>Force.com has <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_overview" target="_blank" rel="external">a wide range of secure API’s</a> with which to integrate your own applications.  Any applications built on top of Force.com automatically become available via the Salesforce APIs.</p>
+<p>Typically your own applications will use the <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_soap" target="_blank" rel="external">Salesforce SOAP API</a> or <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_rest" target="_blank" rel="external">REST API</a> for integration.  Other common API’s include the <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_bulk" target="_blank" rel="external">Bulk API</a> for loading large data sets and <a href="https://developer.salesforce.com/trailhead/api_basics/api_basics_streaming" target="_blank" rel="external">Streaming API</a> which lets you push a stream of notifications from Salesforce.  Salesforce also provides the <a href="https://developer.salesforce.com/page/Introduction_to_the_Force.com_Web_Services_Connector" target="_blank" rel="external">Force.com Web Services Connector</a>, a high-performing Web services client stack implemented with a streaming parser that is the preferred tool for working with salesforce.com APIs.</p>
+<p>To call your own API’s and services from Salesforce, we provide <a href="https://developer.salesforce.com/trailhead/module/apex_integration_services" target="_blank" rel="external">Apex Integration Services</a>.</p>
+<p>All the Salesforce API’s are available from any applications that are defined as Trusted in Salesforce and run over HTTPS, such as those deployed on <a href="https://heroku.com" target="_blank" rel="external">Heroku</a>.  Those Heroku deployed apps also have the <a href="https://developer.salesforce.com/trailhead/module/lightning_connect" target="_blank" rel="external">Salesforce Connect service</a> available via (Heroku Postgres)[<a href="https://postgres.heroku.com" target="_blank" rel="external">https://postgres.heroku.com</a>] to automatically synchronise data between Salesforce and your custom applications.</p>
+<h1 id="Trailhead-learning-App-Cloud"><a href="#Trailhead-learning-App-Cloud" class="headerlink" title="Trailhead - learning App Cloud"></a>Trailhead - learning App Cloud</h1><img src="/images/trailhead-banner.png" class="img-topic">
+<p>We created Trailhead to interactively help to build applications on the Salesforce App Cloud, asking questions and setting challenges so you can evaluate your skills along the way.  If you are just starting with Salesforce, try the <a href="https://developer.salesforce.com/trailhead/trail/force_com_dev_beginner" target="_blank" rel="external">Developer Beginner trail</a>.</p>
+<h1 id="Sign-up-Free-Developer-Environments"><a href="#Sign-up-Free-Developer-Environments" class="headerlink" title="Sign up Free Developer Environments"></a>Sign up Free Developer Environments</h1><p>Force.com - sign up at <a href="https://developer.salesforce.com/trailhead" target="_blank" rel="external">https://developer.salesforce.com/trailhead</a> for a Trailhead login to track your progress.  The same account also gives you a free Force.com developer environment with all the features of a production enviroment, only limited by number of accounts &amp; rows of data.</p>
+<p>Heroku - sign up at <a href="http://heroku.com" target="_blank" rel="external">http://heroku.com</a> and download the <a href="https://toolbelt.heroku.com" target="_blank" rel="external">Heroku CLI</a> tool and start deploying your apps, provisioning services and getting back to focusing on your app development.</p>
+<p>In the next article in this series we will discuss Open Banking applications and services to help inspire your own ideas on how you could use the Salesforce App Cloud.  In the mean time, checkout <a href="https://developer.salesforce.com" target="_blank" rel="external">developer.salesforce.com</a> for more examples of building apps in the Cloud.</p>
+<p>Thank you<br>John Stevenson<br><a href="https://twitter.com/jr0cket" target="_blank" rel="external">@jr0cket</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://agileforce.co.uk/2016/07/getting-started-with-salesforce-app-cloud.html" data-id="cj1dns21e0009mcu3w65tb456" class="article-share-link">Share</a>
+      
+        <a href="http://agileforce.co.uk/2016/07/getting-started-with-salesforce-app-cloud.html#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/app-cloud/">app-cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/beginners/">beginners</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/02/londons-calling-you-salesforce-part1.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          London&#39;s Calling You, Salesforce
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Salesforce Open Banking Apps at Barclays Rise Hackathon</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/feeling-smarter-after-dreamforce-2016.html">Feeling Smarter After Dreamforce 2016</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html">Salesforce Open Banking Apps at Barclays Rise Hackathon</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/getting-started-with-salesforce-app-cloud.html">Getting Started With Salesforce App Cloud</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/londons-calling-you-salesforce-part1.html">London&#39;s Calling You, Salesforce</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-metadata-with-git-and-force-cli.html">Managing Metadata With Git and Force CLI</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/managing-salesforce-metadata-with-git-and-force-cli.html">Getting Started With Github for Versioning Salesforce Metadata</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/welcome-to-agileforce.html">Welcome to AgileForce</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/app-cloud/">app-cloud</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/event/">event</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshops/">workshops</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/app-cloud/" style="font-size: 10px;">app-cloud</a> <a href="/tags/barclays/" style="font-size: 10px;">barclays</a> <a href="/tags/beginners/" style="font-size: 10px;">beginners</a> <a href="/tags/dreamforce/" style="font-size: 10px;">dreamforce</a> <a href="/tags/force/" style="font-size: 20px;">force</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/hackathon/" style="font-size: 10px;">hackathon</a> <a href="/tags/lightning/" style="font-size: 10px;">lightning</a> <a href="/tags/open-banking/" style="font-size: 10px;">open-banking</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Stevenson<br>
+      <a href="http://twitter.com/jr0cket" target="_blank">@jr0cket</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/lightning" class="mobile-nav-link">Lightning</a>
+  
+    <a href="/heroku-workshop" class="mobile-nav-link">Heroku Workshop</a>
+  
+    <a href="https://developer.salesforce.com" class="mobile-nav-link">Salesforce Developers</a>
+  
+    <a href="http://jr0cket.co.uk" class="mobile-nav-link">jr0cket</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'agileforce';
+  
+  var disqus_url = 'http://agileforce.co.uk/2016/07/getting-started-with-salesforce-app-cloud.html';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<div id="scroll2top" style="position:fixed;bottom:150px;right:50px;cursor: pointer;Z-index:9999">
+<a title="返回顶部" href="#"><img src="/scroll2top/scrollup.png"/></a>
+</div>
+<script src="/scroll2top/scroll2top.js"></script>
+
+
+
+  </div>
+</body>
+</html>

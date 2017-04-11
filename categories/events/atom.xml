@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Agileforce]]></title>
+  <subtitle><![CDATA[Agile Salesforce Development]]></subtitle>
+  <link href="categories/events/atom.xml" rel="self"/>
+  <link href="http://agileforce.co.uk/"/>
+  <updated>2017-04-11T14:33:54.595Z</updated>
+  <id>http://agileforce.co.uk/</id>
+  
+  <author>
+    <name><![CDATA[John Stevenson]]></name>
+    <email><![CDATA[john@agileforce.co.uk]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[London's Calling You, Salesforce]]></title>
+    <link href="http://agileforce.co.uk/2016/02/londons-calling-you-salesforce-part1.html"/>
+    <id>http://agileforce.co.uk/2016/02/londons-calling-you-salesforce-part1.html</id>
+    <published>2016-02-05T10:30:33.000Z</published>
+    <updated>2017-04-11T14:33:54.595Z</updated>
+    <content type="html"><![CDATA[<img src="/images/londons-calling-banner.png" class="img-topic">
+<p><a href="http://www.londonscalling.net" target="_blank" rel="external">London’s Calling</a> to all the far away towns &amp; cities of the UK for the last few months and the Salesforce community answered that call, turning up in their hundreds.</p>
+<p>So today I have been surrounded by many of the brightest and best minds in the UK and across Europe &amp; the Middle East too.</p>
+<p>Here is what I discovered today in several parts:</p>
+<ul>
+<li>Part 1: Getting Agile with Salesforce &amp; Testing</li>
+<li>Part 2: A career of fun &amp; discovery</li>
+<li>Part 3: Lightning to the Salesforce nation</li>
+</ul>
+<a id="more"></a>
+<h1 id="Getting-Agile-with-Salesforce-amp-Testing"><a href="#Getting-Agile-with-Salesforce-amp-Testing" class="headerlink" title="Getting Agile with Salesforce &amp; Testing"></a>Getting Agile with Salesforce &amp; Testing</h1><img src="/images/tdd-circle-of-life.png" class="img-topic">
+<p>There are several sessions on testing at London’s calling and testing is a valuable technique in agile development.</p>
+<ul>
+<li><a href="http://www.londonscalling.net/sessions/test-driven-development-in-apex-and-why-you-should-be-using-it/" target="_blank" rel="external">Test Driven Development (TDD) in Apex &amp; why you should be using it</a> by <a href="https://twitter.com/CAldridg3" target="_blank" rel="external">Chris Aldridge - @CAldridg3</a></li>
+</ul>
+<p>As a developer you quickly learn that tests are an important part of writing code on the Salesforce platform, after all you need a minimum of 75% code coverage in order to deploy your code into production.  Tests are more than just a requirement, they can also help you create a good design for your code.</p>
+<p>Using Test Driven Development (TDD) encourages a good architecture with  separation of concerns and decoupled dependencies.  Developers experienced with TDD typically spend less time debugging code as they spend less time writing those bugs in the first place.  The code tends to be shorter (easier to read) and less complex (easier to understand).</p>
+<p>Iterative development keeps you focused on a single task at a time and stops you wasting time on all the things that could be or should be.  TDD makes it easier and safer to change your code (it is called soft-ware after all).  Instant feedback on the code that you are writing and therefore regular testing of your assumptions</p>
+<p>When you have done a few months of the TDD approach then you will notice an unprecedented code coverage, so you never have to worry about meeting the 75% code coverage.</p>
+<p>Sow what is test driven development (TDD)? It’s more than just writing tests before writing code.  I like to think of TDD as  Chris’ preferred definition is:</p>
+<p><strong>“the technique of using automated unit tests to drive the design of software and force decoupling of dependencies”</strong></p>
+<p>A unit test is an automated test in which the smallest testable parts of an application are individual tested.  A unit test should be:</p>
+<ul>
+<li>isoloated &amp; independent</li>
+<li>one behaviour per test</li>
+<li>arrange (set up test data )- act (calling the method) - assert (did it do what it was supposed to)</li>
+<li>deterministic</li>
+<li>remove dependencies - too many dependencies add complexity to your testing and code</li>
+<li>readable</li>
+</ul>
+<p>The process of test driven development is typically</p>
+<ol>
+<li>add a test</li>
+<li>run all tests; the new test should fail</li>
+<li>wrote some code</li>
+<li>run tests</li>
+<li>new test passes</li>
+<li>refactor - can I make this specific piece of code better</li>
+<li>see step 1</li>
+</ol>
+<blockquote>
+<p>TDD mantra: all code is guilty until proven innocent </p>
+</blockquote>
+<p>Chris walked us through the TDD approach he told for a simple project, calculating if a date is a Leap year.  See the <a href="https://github.com/ChrisAldridge/LondonsCalling" target="_blank" rel="external">Leap Years TDD Exercise for London’s Callling on Github</a>.</p>
+<p>Developers and engineers in almost every major programming language already getting great value from Test Driven Development, so surely its time you can also benefit from this technique.</p>
+<ul>
+<li><a href="http://www.londonscalling.net/sessions/writing-sustainable-and-maintainable-apex-tests/" target="_blank" rel="external">Writing sustainable and maintainable Apex Tests</a> by <a href="https://twitter.com/srlawr" target="_blank" rel="external">Simon Lawrence - @srlawr</a> of <a href="https://twitter.com/desynit" target="_blank" rel="external">Desynit</a> - <strong>1.30 Alt room</strong></li>
+</ul>
+<blockquote>
+<p>Also take a look at <a href="https://adtennant.co.uk/blog/2016/01/25/writing-true-unit-tests-using-dependency-injection-mocking-apex/" target="_blank" rel="external">Writing True Unit Tests using Dependency Injection and Mocking in Apex</a> by <a href="https://twitter.com/adtennant" target="_blank" rel="external">Alex Tennant</a></p>
+</blockquote>
+<ul>
+<li><a href="">Unit tests - they’re not just for Apex!</a> by <a href="https://twitter.com/bob_buzzard" target="_blank" rel="external">Keir Bowden - @bobbuzard</a>, CTO of <a href="">BrightGen</a></li>
+</ul>
+<p>We are building responsive &amp; reactive applications more and more, to meet the needs of our customers.</p>
+<p>Wwhilst many developers are writing tests &amp; even TDD for most languages, when it comes to JavaScript its another story.  Two big issues that affect JavaScript testing on the platform are:</p>
+<ul>
+<li>no mandate for a minimum level of test coverage</li>
+<li>no built in JavaScript testing on the platform (yet)</li>
+</ul>
+<p>Challenges<br>No test context for client</p>
+<ul>
+<li>changes are not rolled back</li>
+</ul>
+<p>writing testable code</p>
+<ul>
+<li>unobtrusive javascript - keep your code seperate from your HTML and CSS markup, otherwise you have to replicate this markup in orde to test</li>
+</ul>
+<p>Avoid anonymous functions</p>
+<p>functional decomposition so I can focus on the business logic</p>
+<ul>
+<li>function to decide on a ction</li>
+<li>function to take an action</li>
+</ul>
+<p>QUnit<br>A generic javascript unit testing framework<br>use it as local files rather than CDN’s<br>executes in the browser</p>
+<p>qunit concepts<br>module is a group of tests<br>test is a single test<br>assert - confirm behaviour</p>
+<p>sinon.js<br>pure javascript<br>spys allow you to wrap the existing functions and records executions &amp; paramterters<br>stubs - spies + replace functions<br>mocks - stubs + expected behaviour (rarely used)</p>
+<p>Blanket.js<br>code coverage for your javascript for QUnit, Mocha &amp; jasmin (with an api for other libraries)</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>London’s Calling has been an amazing community driven event and I give my thanks to the organisers who spend months in the planning of this event.  Also thanks to the sponsors that helped make this possible and of course all the amazing people who spoke or attended the event.</p>
+<p>Thank you all.<br><a href="John Stevenson - @jr0cket">https://twitter.com/jr0cket</a></p>
+<blockquote>
+<p>London calling, yes, I was there, too.<br>An’ you know what they said? Well, some of it was true!<br>London calling at the top of the dial<br>After all this, won’t you give me a smile?<br>London calling</p>
+<p>I never felt so much alike [fading] alike alike alike</p>
+<p>Copywright: The Clash, 1979</p>
+</blockquote>
+<p><img src="/images/salesforce-trailhead-battlestation-banner.png" alt="Trailhead - Battlestations"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<img src="/images/londons-calling-banner.png" class="img-topic">
+<p><a href="http://www.londonscalling.net">London’s Calling</a> to all the far away towns &amp; cities of the UK for the last few months and the Salesforce community answered that call, turning up in their hundreds.</p>
+<p>So today I have been surrounded by many of the brightest and best minds in the UK and across Europe &amp; the Middle East too.</p>
+<p>Here is what I discovered today in several parts:</p>
+<ul>
+<li>Part 1: Getting Agile with Salesforce &amp; Testing</li>
+<li>Part 2: A career of fun &amp; discovery</li>
+<li>Part 3: Lightning to the Salesforce nation</li>
+</ul>]]>
+    
+    </summary>
+    
+      <category term="events" scheme="http://agileforce.co.uk/categories/events/"/>
+    
+  </entry>
+  
+</feed>

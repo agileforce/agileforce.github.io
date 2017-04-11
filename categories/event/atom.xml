@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Agileforce]]></title>
+  <subtitle><![CDATA[Agile Salesforce Development]]></subtitle>
+  <link href="categories/event/atom.xml" rel="self"/>
+  <link href="http://agileforce.co.uk/"/>
+  <updated>2016-10-28T16:22:28.629Z</updated>
+  <id>http://agileforce.co.uk/</id>
+  
+  <author>
+    <name><![CDATA[John Stevenson]]></name>
+    <email><![CDATA[john@agileforce.co.uk]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Feeling Smarter After Dreamforce 2016]]></title>
+    <link href="http://agileforce.co.uk/2016/10/feeling-smarter-after-dreamforce-2016.html"/>
+    <id>http://agileforce.co.uk/2016/10/feeling-smarter-after-dreamforce-2016.html</id>
+    <published>2016-10-27T04:23:08.000Z</published>
+    <updated>2016-10-28T16:22:28.629Z</updated>
+    <content type="html"><![CDATA[<img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>Each year I’ve been lucky enough to visit Dreamforce there were so many new ideas to discover and this year even more so, especially with the rise of Artificial Intelligence (AI) and Machine Learning (ML) via Salesforce Einstien.</p>
+<p>Here are just a few of the highlights from Dreamforce 2016 that make me feel a whole lot smarter.</p>
+<a id="more"></a>
+<h1 id="Collaborating-with-Quip"><a href="#Collaborating-with-Quip" class="headerlink" title="Collaborating with Quip"></a>Collaborating with Quip</h1><p>The demo station for <a href="https://quip.com/" target="_blank" rel="external">Quip</a> was over-run with people throughout the conference.  Its not surprising as <a href="https://quip.com/" target="_blank" rel="external">Quip</a> has become the favorite tool for documents and spreadsheets within Salesforce in less than a month.</p>
+<p>Quip is a service similar Google Docs but with a whole lot of extra features that make the experience such a pleasure.  The most noticeable thing is the performance of <a href="https://quip.com/" target="_blank" rel="external">Quip</a> too, its so responsive even on a mobile device.  I have even updated <a href="https://quip.com/" target="_blank" rel="external">Quip</a> spreadsheets and docs on the train home just using my smart phone.  Salesforce has also had 150 concurrently working on one Quip document without any slowdown.</p>
+<p>I really encourage you to give <a href="https://quip.com/" target="_blank" rel="external">Quip</a> a try today, you will not regret it.</p>
+<p><img src="https://lh3.googleusercontent.com/ggQhaOzhFtEB8UmacW-taW__cNbYEzjmUsAcpUc2nOlmBU_waDhUpKruQT80gFBf_DHz=h900" alt="Quip Collaborate"></p>
+<h1 id="Guiding-you-into-Lightning-Components"><a href="#Guiding-you-into-Lightning-Components" class="headerlink" title="Guiding you into Lightning Components"></a>Guiding you into Lightning Components</h1><p>The adoption of Salesforce Lightning Experience continues to grow and with Winter 17 release there are many new features to explore.</p>
+<p><img src="https://jr0cket.quip.com/-/blob/CMRAAADD2hb/DZJ0MSB6wTrR6QV-rYX98g" alt="Lightning Components Winter 17 Features"></p>
+<p>So more and more developers are looking to understand what components to build and the best practices they can use to create those components. </p>
+<p>Tom Waud, Chief Technical Architect at Westbrook, presented <a href="https://www.salesforce.com/video/303939/" target="_blank" rel="external">Advanced Designs for Reusable Lightning Components</a> in which he explained a series of common patterns his developers have used over the last year over the last year to build components effectively. </p>
+<p>And creating Lightning Components its not just in the realms of experienced Salesforce developers.   <a href="https://www.salesforce.com/video/303951/" target="_blank" rel="external">Kerry Townsend shared her journey into coding</a> for the first time on the Salesforce platform, choosing to start by building her first Lightning Component.  This was quite a leap from no-code experience with Salesforce, but with the help of Keir Bowden and several others Kerry managed to create her first component and is keen to do more.</p>
+<p>See the video <a href="https://www.salesforce.com/video/303951/" target="_blank" rel="external">“From No-Code to Lightning Components Developer”</a> by Kerry and Keir and try out the <a href="https://trailhead.salesforce.com/module/lex_dev_lc_basics?utm_campaign=df16_trailhead&amp;utm_source=agenda_builder&amp;utm_medium=site" target="_blank" rel="external">Lightning Components Trail</a> on Salesforce Trailhead.</p>
+<img src="https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_components_basics.png" class="img-topic">
+<p>Keep a look out for Lightning Component Builder in 2017 as this tool promises to make it easier and quicker than ever to create Lightning Components.  Instead of copy-paste of any the boiler-plate code (yes, we all do this), instead you can select the code snippets you need to build your component in a similar way to selecting components in Lightning App Builder.</p>
+<p>Also keep a look-out for Salesforce DX, which promises to deliver set of tools that allow you to create a robust and scalable development and deployment workflow, taking a source driven development approach.  See the <a href="https://www.salesforce.com/video/282548/" target="_blank" rel="external">SalesforceDX demo during the Developer keynote</a> (at 31 minutes in)</p>
+<p><img src="/images/salesforce-dx.png" alt="SalesforceDX"></p>
+<h1 id="The-First-Taste-of-Einstein"><a href="#The-First-Taste-of-Einstein" class="headerlink" title="The First Taste of Einstein"></a>The First Taste of Einstein</h1><img src="https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_artificial_intelligence_basics.png" class="img-topic">
+<p>Artificial Intelligence has already brought us seemingly simple things like product recommendations and speech recognition, however this is just scratching the surface.  New concepts such as artificial hearing are radically changing the way we think about the services that AI can bring us.</p>
+<p>Salesforce has adopted Artificial Intelligence (AI) and Machine Learning (ML) in a big way, its the future of our platform and our products.  Through Salesforce Einstein anyone can have access to recommendations and predictions that would otherwise need an army of data scientists.</p>
+<p><a href="https://www.metamind.io/" target="_blank" rel="external">MetaMind</a> is a <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="external">Deep Learning</a> platform that is becoming part of the Salesforce platform.  Deep Learning is a way to automate the discover information a a huge collection of data, using multiple neural networks all learning from the results of each algorithm in the network.  Soon anyone will be able to use their own data in Salesforce and train up their own Deep Learning algorithms to give valuable insights.</p>
+<p>We are only just scratching the surface of Artificial Intelligence and there are many amazing things to come.  Talk a look at the Salesforce AI story <a href="https://www.salesforce.com/video/282547/" target="_blank" rel="external">Einstein Keynote</a></p>
+<p>As the Salesforce AI story unfolds, why not use Trailhead to discover a little more about <a href="https://trailhead.salesforce.com/module/ai_basics" target="_blank" rel="external">Artificial Intelligence Basics</a> and <a href="https://trailhead.salesforce.com/module/get_smart_einstein_feat" target="_blank" rel="external">Salesforce Einstein Features</a>.</p>
+<p><a href="https://trailhead.salesforce.com/module/get_smart_einstein_feat" target="_blank" rel="external">![Salesforce Einstein] (/images/salesforce-einstein-I-for-everyone.png)</a></p>
+<h1 id="Giving-back-again-and-again"><a href="#Giving-back-again-and-again" class="headerlink" title="Giving back again and again"></a>Giving back again and again</h1><img src="/images/red-astro-hug.jpg" class="img-topic">
+<p>Dreamforce is as much a community experience as it is a conference, a very diverse community at that with large numbers of women and other typically unrepresented groups. </p>
+<p>The Dreamforce community is also very generous with millions of dollars raised during the conference.  This year there was a focus on the organisation <a href="https://red.org/dreamforce/" target="_blank" rel="external">RED</a>, which is committed to ending AIDS in this generation.  The RED campaign was so popular all the RED Astro bears were sold out long before the end of the conference.</p>
+<p>Along with this were the continuing efforts in <a href="https://www.pluralsight.com/courses/teaching-kids-basic-html" target="_blank" rel="external">teaching kids to code</a>, <a href="https://www.pluralsight.com/blog/career/women-in-tech--advice-from-pluralsight---s-leading-female-technology-pros" target="_blank" rel="external">encouraging more women into technology</a>, helping the homeless and providing education services for those struggling to make a living wage.</p>
+<p>Sold out of RED Astro’s - check to see if we made the target - blurb from site…</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Dreamforce 2016 was another huge success with 175,000 attendees in person and 15 million watching the event live.</p>
+<p>My thanks to the legion of people involved in creating Dreamforce each year and to everyone that joins in the fun and discovery.  See you all at <a href="https://www.salesforce.com/form/dreamforce/df17.jsp" target="_blank" rel="external">Dreamforce 2017</a>, from the 6th to 9th November.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>Each year I’ve been lucky enough to visit Dreamforce there were so many new ideas to discover and this year even more so, especially with the rise of Artificial Intelligence (AI) and Machine Learning (ML) via Salesforce Einstien.</p>
+<p>Here are just a few of the highlights from Dreamforce 2016 that make me feel a whole lot smarter.</p>]]>
+    
+    </summary>
+    
+      <category term="dreamforce" scheme="http://agileforce.co.uk/tags/dreamforce/"/>
+    
+      <category term="event" scheme="http://agileforce.co.uk/categories/event/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Salesforce Open Banking Apps at Barclays Rise Hackathon]]></title>
+    <link href="http://agileforce.co.uk/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html"/>
+    <id>http://agileforce.co.uk/2016/08/salesforce-open-banking-apps-at-barclays-rise-hackathon.html</id>
+    <published>2016-08-15T10:02:08.000Z</published>
+    <updated>2017-04-11T12:48:33.084Z</updated>
+    <content type="html"><![CDATA[<img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>Inviting all admins &amp; developers to create a new generation of innovative Open Banking apps on the Salesforce App Cloud. </p>
+<p>Salesforce are a technology partner for the <a href="http://risehackathon.com/" target="_blank" rel="external">Barclays Rise Hackathon - Episode II: The Bank Awakens</a> event and we will be there in force to help everyone build consumer, commercial and autonomous banking apps.</p>
+<a id="more"></a>
+<h1 id="Open-Banking-is-on-the-Rise"><a href="#Open-Banking-is-on-the-Rise" class="headerlink" title="Open Banking is on the Rise"></a>Open Banking is on the Rise</h1><img src="/images/salesforce-open-banking-rise-hackathon.png" class="img-topic">
+<p>Whist customers may change their credit cards every few years, bank accounts typically lasted decades.  In October 2015 a <a href="">survey by the UK’s Competition and Markets Authority</a> revealed that over half of banking customers in Britain had been with the same current account provider for ten years.  This is now set to change dramatically.</p>
+<blockquote>
+<p>Unlike puppies, Bank customers are no longer for life!!</p>
+</blockquote>
+<p>Driven by the rise of comparison &amp; switch sites, eg, <a href="https://www.uswitch.com" target="_blank" rel="external">uSwitch</a>, in Europe customers are already used to switching their Gas &amp; Electricity suppliers or Car Insurance to get the best deals.  This drive is now coming to the banking world, thanks to Europe wide regulations to make banking and financial data more accessible.</p>
+<p>Initiatives like the <a href="https://openbankproject.com/" target="_blank" rel="external">Open Banking project</a> and regulations like PSD2 will require banks to be more open or risk losing customers to those banks that innovate.  Traditional digital platforms such as the retail service Alibaba and message service WeChat already process more payments than PayPal and other dedicated payment services combined.  So without innovation, traditional banking may become irrelevant very quickly.</p>
+<p>In June 2016, <a href="http://www.bbc.co.uk/news/business-36702175" target="_blank" rel="external">Bank of England governor Mark Carney</a>, said: <em>“Fintech will change the nature of money, shake the foundations of central banking and deliver nothing less than a democratic revolution for all who use financial services.”</em></p>
+<p>Companies such as <a href="https://www.creativereview.co.uk/cr-blog/2016/august/mondos-head-of-design-hugo-cornejo-on-designing-a-bank-for-the-digital-age/" target="_blank" rel="external">Mondo</a> have gone as far as creating their own modern Bank and has attracted a huge amount of attention and new customers.</p>
+<h1 id="Building-Open-Banking-Apps-on-Salesforce"><a href="#Building-Open-Banking-Apps-on-Salesforce" class="headerlink" title="Building Open Banking Apps on Salesforce"></a>Building Open Banking Apps on Salesforce</h1><img src="/images/salesforce-app-cloud-logo.png" class="img-topic">
+<p>The depth and breadth of features of the Salesforce platform should enable everyone to building the new wave of banking apps rapidly.  Let’s discuss some brief examples based on the categories of apps for the Barclays Rise hack. </p>
+<h2 id="World-I-The-Consumer-Cosmos"><a href="#World-I-The-Consumer-Cosmos" class="headerlink" title="World I: The Consumer Cosmos"></a>World I: The Consumer Cosmos</h2><p>Managing bank account &amp; customer information and its associated workflows would be easy to do with <a href="https://developer.salesforce.com/trailhead/module/data_modeling" target="_blank" rel="external">Salesforce Data Modeling</a> and <a href="https://developer.salesforce.com/trailhead/module/business_process_automation" target="_blank" rel="external">Process Automation</a>.  Salesforce could become the aggregating platform for information across multiple bank accounts; credit card and mobile payment services.  Integration can be created without code using <a href="https://developer.salesforce.com/trailhead/module/lightning_connect" target="_blank" rel="external">Salesforce Connect services</a> or via custom services and <a href="https://developer.salesforce.com/trailhead/module/salesforce_heroku_integration" target="_blank" rel="external">Heroku Connect</a>.</p>
+<p>Customers would have a single view of all their finances via <a href="https://developer.salesforce.com/trailhead/module/lex_implementation_reports_dashboards" target="_blank" rel="external">Reports &amp; Dashboards</a> to make informed choices.  Using <a href="https://developer.salesforce.com/trailhead/module/wave_analytics_basics" target="_blank" rel="external">Wave Analytics services</a>, payment decisions can be made in real time from information across any number of payment channels.</p>
+<p>Using the <a href="https://developer.salesforce.com/trailhead/module/lex_migration_introduction" target="_blank" rel="external">Salesforce Lightning Experience</a> would also provide a multi-device, responsive app that will engage the customer and give them the tools they need to effectively manage their finances.  The <a href="https://developer.salesforce.com/trailhead/module/lightning_design_system" target="_blank" rel="external">Salesforce Lightning Design System</a> gives a quality UX for your custom apps too.</p>
+<h2 id="World-II-Rebellion-of-the-Corporate-Treasurer"><a href="#World-II-Rebellion-of-the-Corporate-Treasurer" class="headerlink" title="World II: Rebellion of the Corporate Treasurer"></a>World II: Rebellion of the Corporate Treasurer</h2><p>Salesforce can be used as a platform to <a href="https://developer.salesforce.com/trailhead/en/module/advanced_formulas" target="_blank" rel="external">manage multiple currencies</a> and across multiple geographies, supporting complex payment management workflows with <a href="https://developer.salesforce.com/trailhead/module/business_process_automation" target="_blank" rel="external">process automation</a>. This would enabling treasurers to make sure their money is in the right place at the right time and in the right currency.</p>
+<p>With data security such as <a href="https://developer.salesforce.com/trailhead/en/module/data_security" target="_blank" rel="external">Audit Trails</a>, <a href="https://developer.salesforce.com/trailhead/en/module/event_monitoring" target="_blank" rel="external">Event Monitoring</a> and <a href="https://developer.salesforce.com/trailhead/module/lex_implementation_reports_dashboards" target="_blank" rel="external">Reports</a> built into the platform, much of the features needed for these services would be at hand.  <a href="https://developer.salesforce.com/trailhead/en/module/spe_admins" target="_blank" rel="external">Salesforce Platform Encryption</a> ensures that this sensitive financial information is managed securely and within compliance.</p>
+<p>And of course there are single sign-on and 2 Factor authentication services to ensure the correct people have easy to use and secure access.</p>
+<h2 id="World-III-The-Payments-Parallax"><a href="#World-III-The-Payments-Parallax" class="headerlink" title="World III: The Payments Parallax"></a>World III: The Payments Parallax</h2><p>Using <a href="https://www.heroku.com/" target="_blank" rel="external">Heroku</a> you can deploy and scale your own “intelligent bots” to allow customers to get an initial mortgage assessment as they were walking around the property they were viewing.</p>
+<p>Entering the postcode (zipcode) and a few simple facts about the property could give you a range of mortgage offers, home insurance quotes and information on local council tax rates. </p>
+<p>By pulling in data from smart meters, customers could assess how much they would pay on gas, electricity and water for the property.  All this would help the customer know how affordable their house is and what would be the true cost of buying a home, all from a few simple questions.</p>
+<p>Many <a href="https://en.wikipedia.org/wiki/Financial_technology" target="_blank" rel="external">Financial Technology (FinTech)</a> solutions require the transfer of sensitive information, so you could build custom solutions using the BlockChain.  By using Heroku elements such as a <a href="https://elements.heroku.com/buttons/kmhouk/service-my-wallet-v3" target="_blank" rel="external">Blockchain Wallet</a>, <a href="https://elements.heroku.com/addons/shocard" target="_blank" rel="external">Blockchain user management</a> or a complete <a href="https://elements.heroku.com/buttons/coinbase/toshi" target="_blank" rel="external">Blockchain protocol implementation</a> would speed up development of such a service.</p>
+<p>Deliver a service to where your customers spend their time, using either the free <a href="https://developer.salesforce.com/trailhead/en/module/salesforce1_mobile_app" target="_blank" rel="external">Salesforce1 Mobile client</a> or creating your own <a href="https://developer.salesforce.com/trailhead/en/project/mobile-sdk-hybrid-apps" target="_blank" rel="external">hybrid</a> or <a href="https://developer.salesforce.com/trailhead/en/module/mobile_sdk_introduction" target="_blank" rel="external">native</a> apps with Salesforce.  Or integrate with virtual assistants such as Siri, Google Now &amp; Cortana to enhance the customer experience whilst still providing traditional services customers expect from financial transactions.</p>
+<p>These are just a few simple ideas of how you could get started building something amazing and make a real changing to the way we use banking.  I look forward to seeing what you create.</p>
+<h1 id="Join-in-the-new-generation-of-banking"><a href="#Join-in-the-new-generation-of-banking" class="headerlink" title="Join in the new generation of banking"></a>Join in the new generation of banking</h1><p>Registration for <a href="http://risehackathon.com/" target="_blank" rel="external">Rise Hackathon - Episode II: The Bank Awakens</a> is now open, until September 11th.  The Hackathon itself takes place on 24th &amp; 25th September.  So join us and shape the future of customer interaction with banking services</p>
+<p>See you there and may the force of the <a href="https://developer.salesforce.com" target="_blank" rel="external">Salesforce App Cloud</a> be with you.</p>
+<p>Thank you.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<img src="/images/salesforce-app-cloud-logo.png" class="img-thumbnail">
+<p>Inviting all admins &amp; developers to create a new generation of innovative Open Banking apps on the Salesforce App Cloud. </p>
+<p>Salesforce are a technology partner for the <a href="http://risehackathon.com/">Barclays Rise Hackathon - Episode II: The Bank Awakens</a> event and we will be there in force to help everyone build consumer, commercial and autonomous banking apps.</p>]]>
+    
+    </summary>
+    
+      <category term="hackathon" scheme="http://agileforce.co.uk/tags/hackathon/"/>
+    
+      <category term="barclays" scheme="http://agileforce.co.uk/tags/barclays/"/>
+    
+      <category term="open-banking" scheme="http://agileforce.co.uk/tags/open-banking/"/>
+    
+      <category term="event" scheme="http://agileforce.co.uk/categories/event/"/>
+    
+  </entry>
+  
+</feed>
